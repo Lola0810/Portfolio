@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lola Navarro | Accueil</title>
+
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="icon" type='image/png' href="src/img/Logo.png">
+</head>
+<body>
+    <header class="background">
+        <img src="src/img/Logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="pages/projects.html">Projets</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="src/img/Translate.png" alt="Translate">
+        <ul>
+            <li>FR</li>
+            <li>EN</li>
+        </ul>
+    </header>
+    
+    <main>
+        <div id="home">
+            <div id="info">
+                <h1>LOLA NAVARRO</h1>
+                <h3>Développeuse web Junior</h3>
+                <p>Etudiante en BUT Multimédia et métiers de l'internet à Lannion</p>
+
+                <button id="CV">MON CV
+                    <img src="src/img/Arrow.svg" alt>
+                </button>
+            </div>
+            
+            <div>
+                <img src="src/img/PP.png" alt>
+            </div>
+        </div>
+
+        <img id="scroll" src="src/img/ScrollDown.png" alt>
+
+        <div id="skills">
+            <div id="developpement">
+                <h2>Développement</h2>
+                <p>Je m'intéresse plus particulièrement au développement web Front-End. Je sais créer des interfaces web, en HTML et CSS. 
+                </br>En parallèle j'essaie d'apprendre le Javascript de manière autodidacte pour dynamiser le tout. 
+                </br>En Backend, j'apprends à utiliser le PHP dans le cadre des études.
+                </p>
+                <div class="icon">
+                    <img src="src/img/Icon Logiciels/HTML.png" alt="HTML">
+                    <img src="src/img/Icon Logiciels/CSS.png" alt="CSS">
+                    <img src="src/img/Icon Logiciels/Javascript.png" alt="Javascript">
+                    <img src="src/img/Icon Logiciels/PHP.png" alt="PHP">
+                </div>
+            </div>
+
+            <div id="UI">
+                <h2>UI Design</h2>
+                <p>J'aime créer des design d'interfaces web, et surtout développer ma créativité pour créer un design plus attractif et plus aimé par les utilisateurs.</p>
+                <div class="icon">
+                    <img src="src/img/Icon Logiciels/Figma.png" alt="Figma">
+                    <img src="src/img/Icon Logiciels/Affinity.png" alt="Affinity">
+                </div>
+            </div>
+
+            <div id="design">
+                <h2>Design / Graphisme</h2>
+                <p>J'aime créer des affiches et des logos, cela me permet de comprendre à
+                    utiliser les différents logiciels de graphisme mais surtout à développer mon sens du design.
+                </p>
+                <div class="icon">
+                    <img src="src/img/Icon Logiciels/Photoshop.png" alt="Photoshop">
+                    <img src="src/img/Icon Logiciels/Illustrator.png" alt="Illustrator">
+                    <img src="src/img/Icon Logiciels/Procreate.png" alt="Procreate">
+                    <img src="src/img/Icon Logiciels/Affinity.png" alt="Affinity">
+                </div>
+            </div>
+        </div>
+
+        <div class="background2"></div>
+        <div id="life">
+            <div id="right_container">
+                <h2>Depuis quelques années,</h2>
+                <p>Depuis petite, je suis intéressée par le développement et l'art, j'ai d'abord commencé par la création de bots discord en javascript et la création de dessins.
+                </br></br>
+                Je me suis ensuite intéressée au développement web lors de mon année de seconde, c'est la raison pour laquelle j'ai appris de manière autodidacte le HTML et le CSS.
+                J'ai continué plus en profondeur en apprenant les bases du Javascript. 
+                </br></br>
+                J'ai choisi le parcours du lycée général avec comme spécialités NSI (informatique), Mathématiques et AMC (Anglais). Cela m'a permis d'apprendre à utiliser SQL, python et PHP. 
+                En parallèle j'ai appris à utiliser Figma pour créer des interfaces web attractives et intéressantes à l'œil.
+                </br></br>
+                De mon bac général avec mention bien, j'ai continué par un BUT MMI (Multimédia et métier de l'internet) à l'IUT de Lannion. Le but principal de mon arrivée en MMI est de m'orienter vers le développement web et l'UI design.
+                </br></br>    
+                Durant cette année, j'ai pu m'intéresser plus en détail au design, aux logos et aux flyers. Ce domaine a fortement augmenté ma créativité et mon envie de créer plus de projets.
+                </br></br>    
+                Après ma redécouverte du développement web en profondeur, je me suis prise de passion pour ce métier.
+                </br></br>    
+                A voir plus dans <a href="src/img/CV.pdf" target="_blank" rel="noopener">mon CV</a>.
+                </p>
+            </div>
+
+            <div>
+                <img src="src/img/PetitMoi.png" alt="Petit personnage Lola">
+            </div>                
+        </div>
+
+        <div id="travaux">
+            <div>
+                <h2>Je fais des sites web</h2>
+                <p>Maquettage Figma & projets scolaires open-source</p>
+                <button>MES  TRAVAUX
+                    <img src="src/img/Arrow.svg" alt="Flèche">
+                </button>
+            </div>
+            <span id="ligne"></span>
+            <div>
+                <h2>Je fais du design parfois</h2>
+                <p>Sketch de dessins papiers & créations de logos fictifs</p>
+
+                <button>MES DESIGNS
+                    <img src="src/img/Arrow.svg" alt="Flèche">
+                </button>
+            </div>
+        </div>
+    </main>
+
+    
+
+    <script type="text/javascript">
+        /* const translateButton = document.getElementById('translate');
+        translateButton.onclick = () => {
+            const toggled = translateButton.classList.toggle("acitve");
+            document.querySelector('header>ul')
+                .style.display = toggled ? "block" : "none";
+        }; */
+        const bouton = document.getElementById('CV');
+        bouton.addEventListener("click", function() {
+            window.open("src/img/CV.pdf", "_blank");
+        });
+    </script>
+    <footer>
+        <span>&copy; Lola Navarro 2022</span>
+        <nav>
+            <a id="lien_github" href="https://github.com/Lola0810"><img src="src/img/GitHub.png" alt="Github"></a>
+            <a id="len_linkedIn" href="https://www.linkedin.com/in/lola-navarro/"><img src="src/img/LinkedIn.png" alt="LinkedIn"></a>            
+        </nav>
+    </footer>
+</body>
+</html>
