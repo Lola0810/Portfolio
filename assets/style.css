@@ -1,0 +1,514 @@
+/* ------- Init ------- */
+*, body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--white) !important;
+}
+
+.main-content{
+    min-height: 100vh;
+}
+
+/* Animations */
+@keyframes bounce_vertically {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+    transform: translateY(-1.9em);
+    }
+    60% {
+    transform: translateY(-0.9em);
+    }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0) }
+    to { transform: rotate(-360deg) }
+}
+
+
+/* Stylisation des différentes balises qui ne changera pratiquement pas */
+h1 {
+    font-size: 6.313rem;
+    font-family: Satoshi_Black;
+    max-width: 99%;
+    line-height: 100px;
+    color: var(--main);
+}
+h2 {
+    font-size: 2.563rem;
+    color: var(--main);
+    font-family: Satoshi_Bold;
+}
+h3 {
+    font-size: 1.9rem;
+    color: var(--main);
+    font-family: Satoshi_Bold;
+    font-weight: normal;
+}
+
+h4 {
+    font-family: Satoshi_Medium;
+    font-size: 1.2em;
+    color: var(--main);
+    text-transform: uppercase;
+}
+p {
+    font-family:  Satoshi_Regular;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+button {
+    background-color: var(--main);
+    padding: 12px 18px;
+    font-family: 'Satoshi_Black';
+    color: white;
+    border: none;
+    border-radius: 21px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+a {
+    color: var(--main);
+    font-family: Satoshi_Medium;
+    font-size: 1.1rem;
+}
+/* ------- END Init ------- */
+
+
+/* ------- Fonts ------- */
+@font-face {
+    src: url(fonts/Satoshi-Black.otf);
+    font-family: Satoshi_Black;
+}
+@font-face {
+    src: url(fonts/Satoshi-Bold.otf);
+    font-family: Satoshi_Bold;
+}
+@font-face {
+    src: url(fonts/Satoshi-Medium.otf);
+    font-family: Satoshi_Medium;
+}
+@font-face {
+    src: url(fonts/Satoshi-Regular.otf);
+    font-family: Satoshi_Regular;
+}
+
+/* ------- END Fonts ------- */
+
+
+/* ------- Couleurs ------- */
+:root {
+    --main: #FF66A2; 
+    --secondary:#00DA7E;
+    --white: #FDFAF8;
+    --main-form: #FEB0CD;
+    --text-color: #0D1F30;
+}
+/* ------- END Couleurs ------- */
+
+/* ------- Header ------- */
+header {
+    height: 6.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > img {
+    position: absolute;
+}
+header > *:nth-child(1) {
+    top: 1.5em;
+    left: 2.5em;
+    width: 2.3em;
+}
+
+ul{
+    list-style-type: none;
+}
+
+header > nav > ul {
+    display: flex;
+
+    list-style: none;
+    font-family: Satoshi_Medium;    
+}
+header > nav > ul > li {
+    font-size: 1.4em;
+    margin: 0 1.5rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: var(--text-color);
+
+    font-family: Satoshi_Medium;
+    font-size: 1.4rem;
+}
+
+/* Animation passage souris sur <a> */
+header > nav > ul > li > a:hover::before {
+    width: 100%;
+}
+header > nav > ul > li > a::before {
+    content: "";
+    display: block;
+    transition: width .4s ease;
+
+    position: absolute;
+    bottom: -0.2em;
+
+    border-radius: 6.2em;
+    width: 0;
+    height: 0.2em;
+    background-color: var(--main);
+}
+
+/* ------- END Header ------- */
+
+
+
+/* HOME */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20em;
+
+    
+    padding-bottom: 8em;
+    margin-top: 11em;
+}
+#description {
+    width: 39%;
+}
+
+#description>h2 {
+    color: var(--text-color);
+    font-family: Satoshi_Medium !important;
+    font-weight: normal;
+    margin-left: -1vh;
+    padding-bottom: 1vh;
+}
+
+#description>h2>span {
+    font-family: Satoshi_Black;
+    color: white;
+    background-color: var(--main);
+    margin-left: 2px;
+    padding: 3px 15px;
+    border-radius: 21px;
+}
+
+#description>p {
+    font-family: 'Satoshi_Medium';
+    color: var(--text-color);
+    margin-left: 6vh;
+    width: 109%;
+    margin-top: 2vh;
+    font-size: 1.563rem;
+}
+
+
+#round {
+    width: 15em;
+    height: 15em;
+
+    position: relative;
+}
+#round>* {
+    position: absolute;
+}
+#round>:nth-child(1) {
+    left: 10%;
+}
+#round>:nth-child(2) {
+    left: -70%;
+    top: -70%;
+    
+    animation: rotate 6s linear infinite;
+}
+
+/* Décorations vectorielles */
+img#scroll {
+    display: block;
+    margin: 3em auto;
+    animation: bounce_vertically 2s infinite;
+}
+
+img.ligne_vectorielle {
+    position: absolute;
+    top: 25vh;
+}
+
+/* END HOME */
+
+/* SKILLS */
+#skills {
+    margin-top: 15em;
+    margin-left: 19%;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+#skills > *:nth-child(odd) {
+    width: 32%;
+}
+#skills > *:nth-child(even) {
+    width: 29em;
+    margin-left: 48%;
+    margin-bottom: 2em;
+}
+
+#skills>div>img {
+    margin-top: 2vh;
+}
+
+.ligne_vectorielle2 {
+    position: absolute;
+    top: 100%;
+}
+/* END SKILLS */
+
+/* CALL TO PROJECTS */
+.calltoproject {
+    display: flex;
+    margin: 3% 0;
+    margin-top: 12vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calltoproject>span {
+    font-family:  Satoshi_Medium;
+    color: var(--main);
+    font-size: 1.1rem;
+    margin-bottom: 2vh;
+}
+/* END CALL TO PROJECT */
+
+
+/******************** Page 2 - Travaux ***********************/
+
+/* Décorations */
+img.ligne_vectorielle2 {
+    position: absolute;
+    bottom: 0vh;
+    right: 0;
+}
+
+img.rectangle {
+    position: absolute;
+    width: 13%;
+}
+
+
+/* Projets */
+.container_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 41vh;
+    margin-bottom: 4vh;
+}
+.card {
+    background-color: #FFF;
+    width: 26%;
+    margin: 0 0 3vh 0;
+    padding: 0 0 0vh 0;
+    border-radius: 0 0 9px 9px;
+}
+.image {
+    display: flex;
+    max-width: 100%;
+    max-height: 148px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background: content-box;
+    object-fit: contain;
+    border-radius: 8px 8px 0 0;
+}
+.card img {
+    max-width: 100%;
+}
+.description {
+    padding: 14px 0 0 19px;
+}
+
+.flex_right {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 15px;
+}
+
+.seemore {
+    padding: 8px 9px;
+    margin: 14px 4px;
+    font-size: 11px;
+}
+
+/* Details d'un projet */
+.pop-up {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    top: 0;
+    z-index: 99;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    text-align: center;
+    top: 16px;
+    color: var(--main);
+    border: 2px solid var(--main);
+    border-radius: 100%;
+    padding: 2px 22px;
+    cursor: pointer;
+    font-size: 4em;
+}
+
+.pop-up>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up>div>.contenu_projet {
+    width: 30%;
+    margin-left: 4em;
+}
+
+.contenu_projet>h4 {
+    margin-top: 22px;
+}
+
+.contenu_projet li {
+    list-style-type: none;
+    font-family: Satoshi_Regular;
+    color: var(--text-color-);
+    font-size: 1.1rem;
+}
+
+img.image_visuel {
+    width: 45%;
+    object-fit: contain;
+}
+
+.designs>div>.image_visuel {
+    width: 23%;
+}
+
+ul.list-cv{
+    list-style-type: none;
+}
+
+li.list-cv{
+    display: flex;
+    flex-direction: column;
+}
+
+.projets>h2, .designs>h2{
+    font-size: 2.563rem;
+    color: var(--main);
+    font-family: Satoshi_Bold;
+    text-align: center;
+    margin-top: 7vh;
+    margin-bottom: 6vh;
+}
+
+/******************** Page 3 - A propos ***********************/
+.propos {
+    gap: 7vh;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.propos>img {
+    width: 79vh;
+}
+
+.texte_desc>p {
+    margin-top: 4vh;
+}
+
+.texte_desc {
+    width: 24%;
+}
+
+#contact>div>a>img {
+    width: 6vh;
+    margin-right: 2vh;
+    margin-top: 2vh;
+}
+
+.contactme{
+    text-align: center;
+    margin-top: 6vh;
+}
+
+#contact {
+    background-color: #FFF;
+    width: 47%;
+    display: flex;
+    margin: 2em 0 11vh 26%;
+    padding: 3em 0 5em 4em;
+}
+#contact button {
+    margin-top: 4vh;
+}
+#ligne_verticale {
+    border-left: 3px solid var(--main);
+    display: inline-block;
+    height: 18em;
+    margin: -3px 33px -49px -7px;
+}
+#contact>div {
+    width: 45%;
+}
+
+#contact>div>h2 {
+    margin-bottom: 2vh;
+}
+
+#contact p {
+    margin-top: 1vh;
+}
+
+/* ------- Footer ------- */
+footer {
+    height: 6vh;
+    background-color: var(--main);
+    color: var(--white) !important;
+    display: flex;
+    font-family: Satoshi_Medium;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+footer>:nth-child(2) {
+    margin-left: -18%;
+}
+
+nav>a {
+    padding: 0 7px;
+}
+/* ------- END Footer ------- */
