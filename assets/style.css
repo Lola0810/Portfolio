@@ -32,10 +32,10 @@ body {
 
 /* Stylisation des différentes balises qui ne changera pratiquement pas */
 h1 {
-    font-size: 5rem;
+    font-size: 6.313rem;
     font-family: Satoshi_Black;
     max-width: 99%;
-    line-height: 5rem;
+    line-height: 100px;
     color: var(--main);
 }
 h2 {
@@ -52,15 +52,14 @@ h3 {
 
 h4 {
     font-family: Satoshi_Medium;
-    font-size: 1rem;
+    font-size: 1.2em;
     color: var(--main);
     text-transform: uppercase;
-    
 }
 p {
     font-family:  Satoshi_Regular;
     color: var(--text-color);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 button {
@@ -231,11 +230,12 @@ header > nav > ul > li > a::before {
     left: 10%;
 }
 #round>:nth-child(2) {
-    left: -38%;
-    top: -37%;
-
+    left: -70%;
+    top: -70%;
+    
     animation: rotate 6s linear infinite;
 }
+
 /* Décorations vectorielles */
 img#scroll {
     display: block;
@@ -393,7 +393,7 @@ img.rectangle {
 }
 
 .contenu_projet>h4 {
-    margin-top: 2%;
+    margin-top: 22px;
 }
 
 .contenu_projet li {
@@ -449,7 +449,7 @@ li.list-cv{
 }
 
 .texte_desc {
-    width: 34%;
+    width: 24%;
 }
 
 #contact>div>a>img {
