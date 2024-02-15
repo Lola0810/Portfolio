@@ -232,7 +232,7 @@ header > nav > ul > li > a::before {
 }
 #round>:nth-child(2) {
     left: -38%;
-    top: -37%;
+    top: -41%;
 
     animation: rotate 6s linear infinite;
 }
