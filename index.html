@@ -5,7 +5,7 @@
     <title>Lola - Portfolio</title>
 
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" type="image/png" href="src/img/Logo.png">
+    <link rel="icon" type="image/png" href="src/img/butterfly.svg">
 </head>
 <body>
     <section class="main-content">
@@ -23,23 +23,86 @@
 
     <main>
         <div id="home">
+            <img id="butterfly_home" src="assets/images/home_butterfly.svg" alt>
             <div id="description">
                 <h2>Bonjour je suis <span>Lola Navarro</span></h2>
-                <h1>Webdesign & Communication</h1>
-                <p>Étudiante à l’IUT de Lannion en 2e année de  BUT MMI  (Métiers du Multimédia et de l’Internet) et  Etudiante-Entrepreneure  à Pépite France</p>
+                <h1>Junior UX/UI Designer</h1>
+                <p>Étudiante à l’IUT de Lannion en 3e année de BUT MMI (Métiers du Multimédia et de l’Internet) <b>à la recherche d’un stage de 15 semaines</b></p>
             </div>
             
             <div id="round">
+                <img src="assets/images/circle.svg" alt>
                 <img src="assets/images/stars.svg" alt>
-                <img src="assets/images/round.svg" alt>
+                <img src="assets/images/round25.svg" alt>
             </div>
         </div>
 
-        <!-- Décoration à gauche -->
-        <img class="ligne_vectorielle" src="assets/images/ligne_vectorielle.svg" alt>
-
         <!-- Icon "v" qui bounce -->
         <img id="scroll" src="assets/images/scrolldown.svg" alt>
+
+        <div id="about-me">
+            <div class="description-me">
+                Mon intérêt pour le web a commencé dès le collège, et j'ai décidé de me spécialiser dans le domaine de l'UX-UI Design. 
+                Mon ambition est de développer ma carrière à l'<span>échelle internationale</span>.
+                <br> <br>
+
+                Afin de concrétiser ces objectifs, je vise à poursuivre mes études en <span>master de web design</span> et à 
+                effectuer une année d'études à l'étranger pour enrichir mes compétences.
+            </div>
+            <div class="linksRS">
+                <img src="assets/images/CV-icon.svg" alt="Accédez à mon CV ici">
+                <img src="assets/images/PDFBook-icon.svg" alt="Accédez à mon Book ici">
+                <img src="assets/images/LinkedIn-icon.svg" alt="Accédez à mon LinkedIn ici">
+                <img src="assets/images/Github-icon.svg" alt="Accédez à mon GitHub ici">
+                <img src="assets/images/bentome-icon.svg" alt="Accédez à mon Bento.me/Lola">
+            </div>
+
+            <div class="group-components">
+                <div class="general-infos">
+                    <div><h4>Permis B</h4> <p>véhiculé</p></div>
+                    <div>
+                        <h4>Langues</h4>
+                        <img src="assets/images/countries.svg">
+                    </div>
+                </div>
+
+                <div class="quote">
+                    <span>“C’est en faisant des erreurs que l’on apprend.”</span>
+                    <p>- Gaston Bachelard</p>
+                </div>
+            </div>
+
+            <div class="carousel">
+                <h2>Mes passions</h2>
+                <div class="carousel-container">
+                  <button class="carousel-btn prev-btn">&#10094;</button>
+                  
+                  <!-- Première carte: Musique -->
+                  <div class="carousel-item">
+                    <img src="music-icon.png" alt="Icône Musique" class="icon">
+                    <h3>Musique</h3>
+                    <ul>
+                      <li>Piano</li>
+                      <li>Guitare</li>
+                      <li>Orchestre</li>
+                    </ul>
+                  </div>
+                  
+                  <!-- Deuxième carte: Voyages -->
+                  <div class="carousel-item">
+                    <img src="travel-icon.png" alt="Icône Voyages" class="icon">
+                    <h3>Voyages</h3>
+                    <ul>
+                      <li>France</li>
+                      <li>Italie</li>
+                      <li>Japon</li>
+                    </ul>
+                  </div>
+              
+                  <button class="carousel-btn next-btn">&#10095;</button>
+                </div>
+              </div>
+        </div>
 
         <div id="skills">
             <!-- Bloc Développement -->
@@ -103,5 +166,6 @@
             <a id="len_linkedIn" href="https://www.linkedin.com/in/lola-navarro/"><img src="./assets/images/linkedin.svg" alt="Clique ici pour voir mon linkedin"></a>            
         </nav>
     </footer>
+    <script src="assets/js/carousel.js" defer></script>
 </body>
 </html>

@@ -1,13 +1,38 @@
-// remplir les containeurs
-for(const [className, data] of [["projects", PROJECTS], ["designs", DESIGNS]])
-    fillContainer(document.querySelector(`.container_cards.${className}`), data);
+// Fonction pour filtrer les projets par type et gérer les styles des boutons
+function filterProjects(type) {
+    // Si "all", on affiche tous les projets
+    const filteredProjects = type === "all" ? PROJECTS : PROJECTS.filter(project => project.type === type);
 
+    // Vider le conteneur avant de le remplir avec les projets filtrés
+    const container = document.querySelector('.container_cards.projects');
+    container.innerHTML = "";  // Vider le conteneur existant
 
+    // Remplir le conteneur avec les projets filtrés
+    fillContainer(container, filteredProjects);
+
+    // Gérer le style actif des boutons : enlever la classe 'active' de tous les boutons
+    const buttons = document.querySelectorAll('.filter-buttons button');
+    buttons.forEach(button => {
+        button.classList.remove('active');  // Retirer la classe active de tous les boutons
+    });
+
+    // Ajouter la classe 'active' uniquement au bouton cliqué
+    const activeButton = document.querySelector(`.filter-buttons button[onclick="filterProjects('${type}')"]`);
+    if (activeButton) {
+        activeButton.classList.add('active');
+    }
+}
+
+// Initialiser les projets affichés
+filterProjects('all'); // Affiche tous les projets par défaut
+
+// Fonction pour remplir un conteneur avec des projets
 function fillContainer(container, data) {
     data.forEach(project => {
         container.insertAdjacentHTML("afterbegin", `
             <div data-project-id="${project.title}" class="card">
                 <!-- Image pour visualiser le projet -->
+                <img src="../assets/images/seemore3.svg" class="overlay" alt="Voir plus" />
                 <div class="image">
                     <img src="../assets/images/thumbnail/${project.thumbnail}" alt>
                 </div>
@@ -17,18 +42,14 @@ function fillContainer(container, data) {
                     <h4>${project.title}</h4>
                     <p>${project.description}</p>
                 </div>
-    
-                <div class="flex_right">
-                    <!-- Bouton voir plus -->
-                    <button class="seemore">EN SAVOIR PLUS</button>
-                </div>
             </div>
         `);
-        document.querySelector(`[data-project-id="${project.title}"] button`)
+        document.querySelector(`.card[data-project-id="${project.title}"]`)
             .onclick = () => openDetails(project);
     });
-    
 }
+
+// Fonction pour afficher les détails d'un projet dans une pop-up
 function openDetails(project) {
     document.body.style.overflowY = "hidden";
     document.body.insertAdjacentHTML("beforeend", `
@@ -39,29 +60,30 @@ function openDetails(project) {
                 <img class="image_visuel" src="../assets/images/thumbnail/${project.thumbnail}" alt>
                 <div class="contenu_projet">
                     <h2>${project.title}</h2>
-                    <h4>Année: ${project.duration.start} - ${project.duration.end}</h4>
-                    <h4>Cadre: ${project.baseline} 
+                    <h4>Période: ${project.duration.start} - ${project.duration.end}</h4>
+                    <h4>Cadre: </h4>
+                    <p> 
+                        ${project.baseline}
+                    </p>
                     <h4>Les missions</h4>
                     <ul>
                         ${project.assignments
-                            .map(assigment => `<li>${assigment}</li>`)
+                            .map(assignment => `<li>${assignment}</li>`)
                             .join("")
                         }
                     </ul>
                     <h4>Technologies utilisées</h4>
                     <ul>
                         ${project.technologies
-                            .map(technologies => `<li>${technologies}</li>`)
+                            .map(technology => `<li>${technology}</li>`)
                             .join("")
                         }
                     </ul>
-                    <h4>Note</h4>
-                    <ul>
-                        ${project.note
-                            .map(note => `<li>${note}</li>`)
-                            .join("")
-                        }
-                    </ul>
+
+                    <h4>Savoir être</h4>
+                    <p>
+                        ${project.softskill}
+                    </p>
                 </div>
             </div>
         </div>

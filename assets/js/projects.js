@@ -1,5 +1,6 @@
 const PROJECTS = [
     {   
+        type: "web",
         class: "projects",
         title: "Répertoire Web",
         description: "Développement web - 2021",
@@ -10,11 +11,11 @@ const PROJECTS = [
         },
         baseline: "Projet lycée",
         assignments: [
-            "Compréhension des attentes du projet",
-            "Planification des tâches et de l’organisation",
-            "Création d’un design adapté au benchmarking effectué sur les sites existants",
-            "Développement de la partie Frontend et Backend du site",
-            "Tester le site"
+            "• Compréhension des attentes du projet",
+            "• Planification des tâches et de l’organisation",
+            "• Création d’un design adapté au benchmarking effectué sur les sites existants",
+            "• Développement de la partie Frontend et Backend du site",
+            "• Tester le site"
         ],
         technologies: [
             "Logiciels: VSCode, Adobe XD", 
@@ -27,6 +28,7 @@ const PROJECTS = [
     },
 
     {   
+        type: "web",
         class: "projects",
         title: "Minigame Web",
         description: "Développement web - 2021",
@@ -37,11 +39,11 @@ const PROJECTS = [
         },
         baseline: "Projet lycée",
         assignments: [
-            "Compréhension des attentes du projet",
-            "Planification des tâches et de l’organisation",
-            "Création d’un design adapté au benchmarking effectué sur les sites existants",
-            "Développement de la partie Frontend et Backend du site",
-            "Tester le site"
+            "• Compréhension des attentes du projet",
+            "• Planification des tâches et de l’organisation",
+            "• Création d’un design adapté au benchmarking effectué sur les sites existants",
+            "• Développement de la partie Frontend et Backend du site",
+            "• Tester le site"
         ],
         technologies: [
             "Logiciels: VSCode, Adobe XD, Webstorm", 
@@ -54,6 +56,7 @@ const PROJECTS = [
     },
 
     {   
+        type: "web",
         class: "projects",
         title: "Pokedex Pokemon Web",
         description: "Développement web - 2023",
@@ -64,10 +67,10 @@ const PROJECTS = [
         },
         baseline: "Projet mmi",
         assignments: [
-            "Compréhension des attentes du projet",
-            "Création d’une charte graphique, d’un wireflow et d’une maquette",
-            "Développement de la partie Frontend et Backend du site",
-            "Hébergement et test du site"
+            "• Compréhension des attentes du projet",
+            "• Création d’une charte graphique, d’un wireflow et d’une maquette",
+            "• Développement de la partie Frontend et Backend du site",
+            "• Hébergement et test du site"
         ],
         technologies: [
             "Logiciels: VSCode, Figma, Github, Wampp", 
@@ -81,6 +84,7 @@ const PROJECTS = [
     },
 
     {   
+        type: "web",
         class: "projects",
         title: "Premier Portfolio",
         description: "Développement web - 2023",
@@ -91,10 +95,10 @@ const PROJECTS = [
         },
         baseline: "Projet mmi",
         assignments: [
-            "Benchmarking sur les portfolio existants",
-            "Création d’une charte graphique et d’une maquette adaptée", 
-            "Développement de la partie Frontend et Backend du site",
-            "Hébergement et test du site"
+            "• Benchmarking sur les portfolio existants",
+            "• Création d’une charte graphique et d’une maquette adaptée", 
+            "• Développement de la partie Frontend et Backend du site",
+            "• Hébergement et test du site"
         ],
         technologies: [
             "Logiciels: Figma, VSCode, Github", 
@@ -108,6 +112,7 @@ const PROJECTS = [
     },
 
     {   
+        type: "web",
         class: "projects",
         title: "Confiz - Achats de confiseries",
         description: "Développement web - 2023",
@@ -118,10 +123,10 @@ const PROJECTS = [
         },
         baseline: "Projet mmi",
         assignments: [
-            "Benchmark des boutiques de confiseries",
-            "Création d’une charte graphique adapté à l’univers",
-            "Conception de l’architecture des pages et d’un wireflow",
-            "Développement de la partie Frontend et Backend du site internet"
+            "• Benchmark des boutiques de confiseries",
+            "• Création d’une charte graphique adapté à l’univers",
+            "• Conception de l’architecture des pages et d’un wireflow",
+            "• Développement de la partie Frontend et Backend du site internet"
         ],
         technologies: [
             "Logiciels: VSCode, Github, Figma, Wampp", 
@@ -134,6 +139,7 @@ const PROJECTS = [
     },
 
     {   
+        type: "UX-UI",
         class: "projects",
         title: "Leurenner - Réservation de Spectacles",
         description: "Design d'application - 2023",
@@ -144,10 +150,10 @@ const PROJECTS = [
         },
         baseline: "Projet mmi",
         assignments: [
-            "Etude de l’existant",
-            "Création d’une charte visuelle",
-            "Conception d’un wireflow et de l’architecture des pages",
-            "Création d’une maquette mettant en avant l’accessibilité et la navigabilité"
+            "• Etude de l’existant",
+            "• Création d’une charte visuelle",
+            "• Conception d’un wireflow et de l’architecture des pages",
+            "• Création d’une maquette mettant en avant l’accessibilité et la navigabilité"
         ],
         technologies: [
             "Logiciels: Figma, Photoshop, Illustrator", 
@@ -160,6 +166,7 @@ const PROJECTS = [
     },
 
     {   
+        type: "UX-UI",
         class: "projects",
         title: "Observations de l'usage de la Bibliothèque",
         description: "Design d'expérience - 2023",
@@ -170,9 +177,9 @@ const PROJECTS = [
         },
         baseline: "Projet mmi",
         assignments: [
-            "Analyse existant et utilisateur (identification des points de friction)",
-            "Problématique design (mettre en avant le problème actuel et son impact)",
-            "Proposition de service innovante pour faire évoluer le service"
+            "• Analyse existant et utilisateur (identification des points de friction)",
+            "• Problématique design (mettre en avant le problème actuel et son impact)",
+            "• Proposition de service innovante pour faire évoluer le service"
         ],
         technologies: [
             "Logiciels: EXCEL, Canva, Figma", 
@@ -186,6 +193,7 @@ const PROJECTS = [
 
 
     {   
+        type: "web",
         class: "projects",
         title: "Dicathlon - Réservation de matériel ",
         description: "Développement web - 2023",
@@ -196,11 +204,11 @@ const PROJECTS = [
         },
         baseline: "Projet mmi",
         assignments: [
-            "Etude de l'existant",
-            "Création d'une planche tendance en rapport avec un persona",
-            "Création d'une charte et d'une identité graphique",
-            "Conception d'un wireframe et d'une maquette responsive qui répond aux attentes de l'utilisateur",
-            "Développement de la partie Frontend et Backend du site"
+            "• Etude de l'existant",
+            "• Création d'une planche tendance en rapport avec un persona",
+            "• Création d'une charte et d'une identité graphique",
+            "• Conception d'un wireframe et d'une maquette responsive qui répond aux attentes de l'utilisateur",
+            "• Développement de la partie Frontend et Backend du site"
         ],
         technologies: [
             "Logiciels: VSCode, Photoshop, Figma, Github Desktop, Wampp", 
@@ -211,11 +219,10 @@ const PROJECTS = [
             "Création d'un site internet from Scratch à partir d'un persona définie. Dans notre cas nous avons eu le persona d'une personne âgée cherchant à louer du matériel sportif facilement car il n'aime pas internet.",
             "À voir sur : <a href='https://www.canva.com/design/DAF4v1audBw/pnIEMRp4sh6kSsLn5gXwcA/view?utm_content=DAF4v1audBw&utm_campaign=designshare&utm_medium=link&utm_source=editor'>Book avec plus d'images</a> et <a href='https://github.com/Lola0810/First_Portfolio'>Répertoire Github</a>"
             ]
-    }
-];
-
-const DESIGNS = [
+    },
+    
     {   
+        type: "affiches",
         class: "designs",
         title: "Faites du numérique",
         description: "Logo, Affiche, Flyer - 2023",
@@ -226,12 +233,12 @@ const DESIGNS = [
         },
         baseline: "Projet mmi",
         assignments: [
-            "Analyse du sujet",
-            "Compréhension des attentes du client",
-            "Benchmarking des autres évènement",
-            "Recherches graphiques",
-            "Production et amélioration des visuels",
-            "Rendu des visuels finaux avec une note d’intention"
+            "• Analyse du sujet",
+            "• Compréhension des attentes du client",
+            "• Benchmarking des autres évènement",
+            "• Recherches graphiques",
+            "• Production et amélioration des visuels",
+            "• Rendu des visuels finaux avec une note d’intention"
         ],
         technologies: [
             "Logiciels: Affinity Photo, Affinity Designer, Photoshop", 
@@ -244,6 +251,7 @@ const DESIGNS = [
     },
 
     {   
+        type: "affiches",
         class: "designs",
         title: "Ifremer - Ulyx",
         description: "Design/Graphisme - 2023",
@@ -254,11 +262,11 @@ const DESIGNS = [
         },
         baseline: "Projet mmi",
         assignments: [
-            "Analyse du sujet et des différents sous-marins",
-            "Benchmarking d'autres infographies similaires",
-            "Recherches graphiques et planche tendance",
-            "Production et amélioration des visuels",
-            "Rendu des visuels finaux avec une note d’intention"
+            "• Analyse du sujet et des différents sous-marins",
+            "• Benchmarking d'autres infographies similaires",
+            "• Recherches graphiques et planche tendance",
+            "• Production et amélioration des visuels",
+            "• Rendu des visuels finaux avec une note d’intention"
         ],
         technologies: [
             "Logiciels: Affinity Designer, Photoshop, Illustrator, Procreate"
@@ -270,6 +278,7 @@ const DESIGNS = [
     },
 
     {   
+        type: "affiches",
         class: "projects",
         title: "Carte de voeux  de l'IUT Lannion",
         description: "Design / Graphisme - 2023",
@@ -280,16 +289,17 @@ const DESIGNS = [
         },
         baseline: "Projet mmi",
         assignments: [
-            "Analyse du sujet",
-            "Recherches graphiques",
-            "Création d'un concept d'idée et d'un univers graphique",
-            "Création des éléments de la carte de voeux : personnages, affiches, cartes",
-            "Oral de présentation pour défendre le concept et le projet"
+            "• Analyse du sujet",
+            "• Recherches graphiques",
+            "• Création d'un concept d'idée et d'un univers graphique",
+            "• Création des éléments de la carte de voeux : personnages, affiches, cartes",
+            "• Oral de présentation pour défendre le concept et le projet"
         ],
         technologies: [
             "Logiciels: Photoshop, Procreate, Figma",
             "Outils de gestion de projet: Notion, Gantt, Google docs"
         ],
+        softskill: "Savoir, responsable, organisée",
         note: [
             "Nous avons été selectionné sur 13 projets pour la carte de voeux de l'IUT de Lannion adressée aux partenaires, aux élèves et à l'équipe pédagogique. Ce projet a été très enrichissant et nous a permis de comprendre l'importance d'avoir un univers graphique défini afin de réussir au mieux une affiche.",
             "N'hésitez pas à regarder mon : <a href='https://www.canva.com/design/DAF4v1audBw/pnIEMRp4sh6kSsLn5gXwcA/view?utm_content=DAF4v1audBw&utm_campaign=designshare&utm_medium=link&utm_source=editor'>Book</a>",
@@ -298,6 +308,7 @@ const DESIGNS = [
     },
 
     {   
+        type: "affiches",
         class: "projects",
         title: "Promotion d'un produit Brique House",
         description: "Design / Graphisme - 2024",
@@ -308,11 +319,11 @@ const DESIGNS = [
         },
         baseline: "Projet mmi",
         assignments: [
-            "Analyse du sujet",
-            "Recherches graphiques",
-            "Création d'un concept et d'un pitch explicatif",
-            "Création de deux affiches et de leur pitch explicatif",
-            "Oral de présentation en Anglais"
+            "• Analyse du sujet",
+            "• Recherches graphiques",
+            "• Création d'un concept et d'un pitch explicatif",
+            "• Création de deux affiches et de leur pitch explicatif",
+            "• Oral de présentation en Anglais"
         ],
         technologies: [
             "Logiciels: Figma, Google Docs, Photoshop, Affinity", 

@@ -6,7 +6,6 @@
 body {
     background-color: var(--white) !important;
 }
-
 .main-content{
     min-height: 100vh;
 }
@@ -23,12 +22,10 @@ body {
     transform: translateY(-0.9em);
     }
 }
-
 @keyframes rotate {
     from { transform: rotate(0) }
     to { transform: rotate(-360deg) }
 }
-
 
 /* Stylisation des différentes balises qui ne changera pratiquement pas */
 h1 {
@@ -41,7 +38,9 @@ h1 {
 h2 {
     font-size: 2.563rem;
     color: var(--main);
-    font-family: Satoshi_Bold;
+    /* font-family: Satoshi_Black;
+    font-size: 3.75rem; */
+    font-family: Satoshi_bold;
 }
 h3 {
     font-size: 1.9rem;
@@ -49,7 +48,6 @@ h3 {
     font-family: Satoshi_Bold;
     font-weight: normal;
 }
-
 h4 {
     font-family: Satoshi_Medium;
     font-size: 1rem;
@@ -62,18 +60,16 @@ p {
     color: var(--text-color);
     font-size: 0.9rem;
 }
-
 button {
     background-color: var(--main);
     padding: 12px 18px;
     font-family: 'Satoshi_Black';
     color: white;
     border: none;
-    border-radius: 21px;
+    border-radius: 40px;
     font-size: 1rem;
     cursor: pointer;
 }
-
 a {
     color: var(--main);
     font-family: Satoshi_Medium;
@@ -194,6 +190,7 @@ header > nav > ul > li > a::before {
 #description>h2 {
     color: var(--text-color);
     font-family: Satoshi_Medium !important;
+    font-size: 2.563rem !important;
     font-weight: normal;
     margin-left: -1vh;
     padding-bottom: 1vh;
@@ -217,6 +214,63 @@ header > nav > ul > li > a::before {
     font-size: 1.563rem;
 }
 
+#animatedText span {
+    color: var(--main);
+    position: relative;
+    font-size: 5rem;
+    font-family: Satoshi_Black;
+    line-height: 5rem;
+    color: var(--main);
+    bottom: -1em;
+    opacity: 0;
+    animation: move-text 0.75s forwards;
+}
+
+@keyframes move-text {
+    0% {
+        bottom: -0.2em;
+        opacity: 1;
+    }
+    50% {
+        bottom: 0.2em;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+      filter: blur(4px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+  
+#home span, #home h1, #home h2, #home h3, #home p {
+    display: inline-block;
+    opacity: 0;
+    animation: fade-in 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+#skills span, #skills h1, #skills h2, #skills h3, #skills p {
+    display: inline-block;
+    opacity: 0;
+    animation: fade-in 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#skills img {
+    opacity: 0;
+    animation: fade-in 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
 
 #round {
     width: 15em;
@@ -227,15 +281,26 @@ header > nav > ul > li > a::before {
 #round>* {
     position: absolute;
 }
-#round>:nth-child(1) {
+#round>:nth-child(2) {
     left: 10%;
 }
-#round>:nth-child(2) {
+#round>:nth-child(1) {
+    left: -53%;
+    top: -55%;
+}
+#round>:nth-child(3) {
     left: -38%;
     top: -41%;
+    opacity: 1;
 
     animation: rotate 6s linear infinite;
 }
+
+.hidden {
+    display: none;
+}
+  
+
 /* Décorations vectorielles */
 img#scroll {
     display: block;
@@ -245,10 +310,81 @@ img#scroll {
 
 img.ligne_vectorielle {
     position: absolute;
-    top: 25vh;
+    top: 40%;
+}
+
+#butterfly_home {
+    position: absolute;
+    z-index: -100;
+    width: 47%;
+    left: 0;
+    
+    top: -8%;
+    
 }
 
 /* END HOME */
+
+/* DESCRIPTION ME */
+
+#about-me {
+    display: flex;
+}
+
+#about-me>div {
+    margin-left: 2%;
+}
+
+.description-me {
+    font-family: 'Satoshi_Regular';
+    color: var(--text-color);
+    margin-left: 6vh;
+    margin-top: 2vh;
+    font-size: 1.563rem;
+
+    background-color: #FFF;
+    border-radius: 22px;
+    padding: 1.5%;
+    width: 20%;
+}
+
+
+.description-me>span {
+    color: var(--main);
+    font-family: 'Satoshi_Bold';
+}
+
+.linksRS {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.general-infos {
+    background-color: #FFF;
+    border-radius: 22px;
+    padding: 4%;
+}
+
+.general-infos>div>h4 {
+    font-size: 1.9375rem;
+    text-transform: none;
+}
+
+.general-infos>div {
+    display: inline-block;
+}
+
+.quote {
+    background-color: #FFF;
+    border-radius: 22px;
+    padding: 4%;
+    width: 20%;
+}
+
+
+/* END DESCRIPTION */
 
 /* SKILLS */
 #skills {
@@ -280,8 +416,8 @@ img.ligne_vectorielle {
 /* CALL TO PROJECTS */
 .calltoproject {
     display: flex;
-    margin: 3% 0;
-    margin-top: 12vh;
+    margin: 2% 0;
+    margin-top: 4vh;
     flex-direction: column;
     align-items: center;
 }
@@ -295,7 +431,10 @@ img.ligne_vectorielle {
 /* END CALL TO PROJECT */
 
 
-/******************** Page 2 - Travaux ***********************/
+
+
+
+/******************** Page 2 - Projets ***********************/
 
 /* Décorations */
 img.ligne_vectorielle2 {
@@ -307,6 +446,29 @@ img.ligne_vectorielle2 {
 img.rectangle {
     position: absolute;
     width: 13%;
+}
+
+/* Boutons filtrés */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 41vh;
+    margin-bottom: 6vh;
+}
+
+.filter-buttons button {
+    background: none;
+    border: 3px solid var(--main);
+    color: var(--main);
+    font-size: 15px;
+    padding: 6px 18px;
+    margin: 0px 6px;
+}
+
+.filter-buttons button.active {
+    background: var(--main);
+    color: var(--white);
 }
 
 
@@ -336,14 +498,45 @@ img.rectangle {
     object-fit: contain;
     border-radius: 8px 8px 0 0;
 }
-.card img {
-    max-width: 100%;
-}
-.description {
-    padding: 14px 0 0 19px;
+
+.overlay {
+    position: absolute;
+    /* top: 16%;
+    left: 36%; */
+
+    /* top: 23%;
+    left: 24%; */
+
+    top: 18%;
+    left: 41%;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
 }
 
-.flex_right {
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card img {
+    max-width: 100%;
+    transition: filter 0.3s ease;
+}
+.card:hover .image  {
+    filter: blur(2px); 
+}
+
+.description {
+    padding: 14px 14px 26px 19px;
+    border-radius: 0 0 9px 9px;
+    box-shadow: 0px 4px 4px #FEB0CD;
+    transition: filter 0.3s ease; 
+}
+
+
+/* .flex_right {
     display: flex;
     justify-content: flex-end;
     padding: 0 15px;
@@ -353,6 +546,28 @@ img.rectangle {
     padding: 8px 9px;
     margin: 14px 4px;
     font-size: 11px;
+} */
+
+.card {
+    position: relative; 
+    transition: transform 0.3s ease; 
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index:0;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 1;
 }
 
 /* Details d'un projet */
@@ -400,7 +615,7 @@ img.rectangle {
     list-style-type: none;
     font-family: Satoshi_Regular;
     color: var(--text-color-);
-    font-size: 0.901rem;
+    font-size: 0.9rem;
 }
 
 img.image_visuel {
@@ -427,68 +642,144 @@ li.list-cv{
     font-family: Satoshi_Bold;
     text-align: center;
     margin-top: 7vh;
-    margin-bottom: 6vh;
+    margin-bottom: 4vh;
 }
+
+
+
+
 
 /******************** Page 3 - A propos ***********************/
-.propos {
-    gap: 7vh;
+#contact {
+    background-color: #FFF;
+    width: 64%;
     display: flex;
-    justify-content: center;
-    height: 100%;
-    margin-top: 2%;
-    margin-bottom: 3%;
+    margin: 2% 0 0 17%;
+    border-radius: 4vh;
+    /* padding: 3em 0 5em 4em; */
+    box-shadow: 0px 0px 16px 1px #FEB0CD;
 }
 
-.propos>img {
-    width: 79vh;
+#contact p {
+    font-size: 1.463rem;
+    width: 89%;
 }
 
-.texte_desc>p {
-    margin-top: 4vh;
-}
-
-.texte_desc {
-    width: 34%;
-}
-
-#contact>div>a>img {
-    width: 6vh;
-    margin-right: 2vh;
-    margin-top: 2vh;
-}
 
 .contactme{
     text-align: center;
     margin-top: 6vh;
+    margin-bottom: 3vh;
 }
 
-#contact {
-    background-color: #FFF;
-    width: 47%;
+
+.left-infos>p {
+    padding-left: 3vh;
+    padding-bottom: 3%;
+}
+
+.basic-infos {
     display: flex;
-    margin: 2em 0 11vh 26%;
-    padding: 3em 0 5em 4em;
-}
-#contact button {
-    margin-top: 4vh;
-}
-#ligne_verticale {
-    border-left: 3px solid var(--main);
-    display: inline-block;
-    height: 18em;
-    margin: -3px 33px -49px -7px;
-}
-#contact>div {
-    width: 45%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
 }
 
-#contact>div>h2 {
-    margin-bottom: 2vh;
+.basic-infos div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3%;
 }
 
-#contact p {
-    margin-top: 1vh;
+.basic-infos img {
+    margin-right: 1vh;
+}
+
+.basic-infos p {
+    font-family: Satoshi_Bold;
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    align-items: center;
+}
+
+.links>* {
+    margin: 0 1%;
+}
+
+.link-button {
+    border-radius: 37px;
+    border: 3px solid var(--main);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: fit-content;
+    position: relative; 
+    overflow: hidden; 
+    background-color: transparent; 
+    transition: color 0.4s ease-out, background-color 0.4s ease-out;  
+}
+
+.link-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main); 
+    transform: translateX(100%); 
+    transition: transform 0.4s ease-out; 
+    z-index: -1; 
+}
+
+.link-button:hover::before {
+    transform: translateX(0); 
+}
+
+.link-button:hover {
+    background-color: var(--main); 
+}
+
+.button-text {
+    padding: 0px 2rem;
+    font-size: 1.18rem;
+    font-family: Satoshi_Black;
+    color: var(--main); 
+    z-index: 1; 
+    transition: color 0.4s ease-out;
+}
+
+.link-button:hover .button-text {
+    color: white; 
+}
+
+.button-icon {
+    background-color: var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 15px;
+    z-index: 1; 
+}
+
+.button-icon>img {
+    width: 1.5rem;
+}
+
+.links>a img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.links>a:hover img {
+    transform: scale(1.1);  
 }
 
 /* ------- Footer ------- */

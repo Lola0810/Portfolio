@@ -5,13 +5,13 @@
     <title>Lola - Portfolio</title>
 
     <link rel="stylesheet" href="../assets/style.css">
-    <link rel="icon" type="image/png" href="../assets/images/Logo.png">
+    <link rel="icon" type="image/png" href="../assets/images/butterfly.svg">
 </head>
 <body>
     <section class="main-content">
     <header>
         <img src="../assets/images/logo.svg" alt>
-
+        
         <nav>
             <ul>
                 <li><a href="../index.html">Accueil</a></li>
@@ -26,21 +26,19 @@
         <img class="ligne_vectorielle2" src="../src/img/ligne_vectorielle2.png" alt>
 
         <!----- Bloc pour les projets ----->
+        
         <div class="projets">
             <!-- Titre h2 -->
             <h2>Mes projets</h2>
 
+            <div class="filter-buttons">
+                <button class="active" onclick="filterProjects('all')">Tous</button>
+                <button onclick="filterProjects('web')">Web</button>
+                <button onclick="filterProjects('affiches')">Affiches</button>
+                <button onclick="filterProjects('UX-UI')">UX/UI Design</button>
+            </div>
+
             <div class="container_cards projects"></div>
-                
-            <!-- Décoration à gauche -->
-            
-        </div>
-
-        <div class="designs">
-            <!-- Titre h2 -->
-            <h2>Mes affiches</h2>
-
-            <div class="container_cards designs"></div>
                 
             <!-- Décoration à gauche -->
             
