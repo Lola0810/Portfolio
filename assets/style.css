@@ -266,7 +266,7 @@ header > nav > ul > li > a::before {
     animation: fade-in 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#skills img {
+#skills img, #skills li{
     opacity: 0;
     animation: fade-in 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
@@ -329,6 +329,8 @@ img.ligne_vectorielle {
 
 #about-me {
     display: flex;
+    justify-content: center;
+    margin-top: 10%;
 }
 
 #about-me>div {
@@ -338,14 +340,12 @@ img.ligne_vectorielle {
 .description-me {
     font-family: 'Satoshi_Regular';
     color: var(--text-color);
-    margin-left: 6vh;
-    margin-top: 2vh;
-    font-size: 1.563rem;
+    font-size: 1.463rem;
 
     background-color: #FFF;
     border-radius: 22px;
     padding: 1.5%;
-    width: 20%;
+    width: 17%;
 }
 
 
@@ -357,32 +357,109 @@ img.ligne_vectorielle {
 .linksRS {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.linksRS>img {
+    margin-bottom: 2px;
+}
+
+.group-components {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .general-infos {
     background-color: #FFF;
     border-radius: 22px;
-    padding: 4%;
+    padding: 7%;
+}
+
+.general-infos>div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4%;
 }
 
 .general-infos>div>h4 {
-    font-size: 1.9375rem;
+    font-size: 1.938rem;
     text-transform: none;
 }
 
-.general-infos>div {
-    display: inline-block;
+.general-infos>div:nth-child(1)>p {
+    font-size: 1.5rem;
+    margin-left: 1rem;
 }
+
+.general-infos>div:nth-child(2)>img {
+    width: 75%;
+}
+
 
 .quote {
     background-color: #FFF;
     border-radius: 22px;
-    padding: 4%;
+    padding: 7%;
+    margin-top: 7%;
+}
+
+.quote>span {
+    font-family: 'Satoshi_Bold';
+    color: var(--main);
+    font-size: 1.563rem;
+}
+
+.quote>p {
+    font-family: 'Satoshi_Regular';
+    color: var(--text-color);
+    font-size: 1.563rem;
+    text-align: end;
+    padding-top: 4%;
+}
+
+.carousel {
+    font-family: 'Satoshi_Regular';
+    color: var(--text-color);
+    font-size: 1.563rem;
+
+    background-color: #FFF;
+    border-radius: 22px;
+    padding: 1.5%;
     width: 20%;
 }
 
+.carousel>h2 {
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    margin-top: 16%;
+    justify-content: space-between;
+}
+
+.carousel-item:not(.hidden) {
+    display: flex;
+    flex-direction: column;
+    width: 17vh;
+    align-items: center;
+}
+
+.carousel-item>h3 {
+    margin-top: 21%;
+    margin-bottom: 21%;
+    text-align: center;
+}
+
+.carousel-item>ul {
+    text-align: center;
+    width: 26vh;
+}
 
 /* END DESCRIPTION */
 
@@ -390,7 +467,7 @@ img.ligne_vectorielle {
 #skills {
     margin-top: 15em;
     margin-left: 19%;
-    margin-bottom: 2em;
+    margin-bottom: 5em;
     display: flex;
     flex-direction: column;
 }
@@ -405,6 +482,12 @@ img.ligne_vectorielle {
 
 #skills>div>img {
     margin-top: 2vh;
+}
+
+#skills>div>li {
+    font-family: 'Satoshi_Regular';
+    color: var(--text-color);
+    font-size: 1.1rem;
 }
 
 .ligne_vectorielle2 {
