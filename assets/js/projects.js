@@ -4,7 +4,7 @@ const PROJECTS = [
         class: "projects",
         title: "Répertoire Web",
         description: "Développement web - 2021",
-        thumbnail: "repertoire.png",
+        thumbnail: "repertoire.webp",
         duration: {
             start: "Mai 2021",
             end: "Août 2021"
@@ -32,7 +32,7 @@ const PROJECTS = [
         class: "projects",
         title: "Minigame Web",
         description: "Développement web - 2021",
-        thumbnail: "coding.png",
+        thumbnail: "coding.webp",
         duration: {
             start: "Janvier 2022",
             end: "Mars 2022"
@@ -60,7 +60,7 @@ const PROJECTS = [
         class: "projects",
         title: "Pokedex Pokemon Web",
         description: "Développement web - 2023",
-        thumbnail: "pokedex.png",
+        thumbnail: "pokedex.webp",
         duration: {
             start: "Décembre 2022",
             end: "Janvier 2023"
@@ -88,7 +88,7 @@ const PROJECTS = [
         class: "projects",
         title: "Premier Portfolio",
         description: "Développement web - 2023",
-        thumbnail: "portfolio.png",
+        thumbnail: "portfolio.webp",
         duration: {
             start: "Janvier 2023",
             end: "Mars 2023"
@@ -116,7 +116,7 @@ const PROJECTS = [
         class: "projects",
         title: "Confiz - Achats de confiseries",
         description: "Développement web - 2023",
-        thumbnail: "confiz.png",
+        thumbnail: "confiz.webp",
         duration: {
             start: "Mai 2023",
             end: "Juin 2023"
@@ -143,7 +143,7 @@ const PROJECTS = [
         class: "projects",
         title: "Leurenner - Réservation de Spectacles",
         description: "Design d'application - 2023",
-        thumbnail: "leurenner.png",
+        thumbnail: "leurenner.webp",
         duration: {
             start: "Septembre 2023",
             end: "Octobre 2023"
@@ -170,7 +170,7 @@ const PROJECTS = [
         class: "projects",
         title: "Observations de l'usage de la Bibliothèque",
         description: "Design d'expérience - 2023",
-        thumbnail: "bibliotheque.png",
+        thumbnail: "bibliotheque.webp",
         duration: {
             start: "Septembre 2023",
             end: "Octobre 2023"
@@ -197,7 +197,7 @@ const PROJECTS = [
         class: "projects",
         title: "Dicathlon - Réservation de matériel ",
         description: "Développement web - 2023",
-        thumbnail: "dicathlon.png",
+        thumbnail: "dicathlon.webp",
         duration: {
             start: "Octobre 2023",
             end: "Décembre 2023"
@@ -226,7 +226,7 @@ const PROJECTS = [
         class: "designs",
         title: "Faites du numérique",
         description: "Logo, Affiche, Flyer - 2023",
-        thumbnail: "plougrescant.png",
+        thumbnail: "plougrescant.webp",
         duration: {
             start: "Décembre 2022",
             end: "Janvier 2023"
@@ -255,7 +255,7 @@ const PROJECTS = [
         class: "designs",
         title: "Ifremer - Ulyx",
         description: "Design/Graphisme - 2023",
-        thumbnail: "ulyx.png",
+        thumbnail: "ulyx.webp",
         duration: {
             start: "Mars 2023",
             end: "Avril 2023"
@@ -282,7 +282,7 @@ const PROJECTS = [
         class: "projects",
         title: "Carte de voeux  de l'IUT Lannion",
         description: "Design / Graphisme - 2023",
-        thumbnail: "voeux.png",
+        thumbnail: "voeux.webp",
         duration: {
             start: "Décembre 2023",
             end: "Décembre 2023"
@@ -312,7 +312,7 @@ const PROJECTS = [
         class: "projects",
         title: "Promotion d'un produit Brique House",
         description: "Design / Graphisme - 2024",
-        thumbnail: "briquehouse.png",
+        thumbnail: "briquehouse.webp",
         duration: {
             start: "Décembre 2023",
             end: "Janvier 2024"
