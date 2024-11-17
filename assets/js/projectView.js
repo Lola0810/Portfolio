@@ -54,9 +54,8 @@ function openDetails(project) {
     document.body.style.overflowY = "hidden";
     document.body.insertAdjacentHTML("beforeend", `
         <div data-for-project-id="${project.title}" class="pop-up ${project.class}">
-            <div>
-                <span class="close">&times;</span>
-                
+            <span class="close">&times;</span>
+            <div>                
                 <img class="image_visuel" src="../assets/images/thumbnail/${project.thumbnail}" alt>
                 <div class="contenu_projet">
                     <h2>${project.title}</h2>
@@ -90,7 +89,7 @@ function openDetails(project) {
     `);
     document.querySelector(`[data-for-project-id="${project.title}"] .close`)
         .onclick = event => {
-            event.target.parentElement.parentElement.remove();
+            event.target.parentElement.remove();
             document.body.style.overflowY = "visible";
         }
 }

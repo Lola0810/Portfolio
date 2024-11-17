@@ -1,44 +1,58 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const items = document.querySelectorAll('.carousel-item');
-  let currentIndex = 0;
-  let autoScrollInterval;
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
-  function updateCarousel() {
-    items.forEach((item, index) => {
-      item.classList.toggle('hidden', index !== currentIndex);
-    });
+const items = Array.from(document.querySelectorAll(".carousel-item"));
+let currentIndex = 0;
+
+let switchingTimeoutId = undefined;
+let isSwitching = false;
+
+const SWITCHING_TIMEOUT = 4e3; // 4 seconds
+const CAROUSEL_AUTOMATIC_SLIDE_TIMEOUT = 5e3; // 5 seconds
+
+function startCarousel() {
+  setInterval(() => {
+    if(isSwitching) {
+      return;
+    }
+    nextSlide();
+  }, CAROUSEL_AUTOMATIC_SLIDE_TIMEOUT);
+}
+
+function updateCarousel(lock) {
+  items.forEach((item, index) => {
+    item.classList.toggle("hidden", index !== currentIndex);
+  });
+
+  if(lock) {
+    isSwitching = true;
+    clearTimeout(switchingTimeoutId);
+    switchingTimeoutId = setTimeout(() => {
+      isSwitching = false
+    }, SWITCHING_TIMEOUT);
   }
+}
 
-  // Fonction pour démarrer le défilement automatique
-  function startAutoScroll() {
-    autoScrollInterval = setInterval(() => {
-      currentIndex = (currentIndex === items.length - 1) ? 0 : currentIndex + 1;
-      updateCarousel();
-    }, 5000); // 5 secondes
+function nextSlide(lockAutomaticSwitch) {
+  if(currentIndex>=items.length-1) {
+    currentIndex = 0;
+  } else {
+    currentIndex++;
   }
-
-  // Fonction pour arrêter le défilement automatique
-  function stopAutoScroll() {
-    clearInterval(autoScrollInterval);
+  updateCarousel(lockAutomaticSwitch);
+}
+function previousSlide(lockAutomaticSwitch) {
+  if(currentIndex <= 0) {
+    currentIndex = items.length-1;
+  } else {
+    currentIndex--;
   }
+  updateCarousel(lockAutomaticSwitch);
+}
 
-  // Initialise le carrousel
+prevBtn.onclick = () => previousSlide(true);
+nextBtn.onclick = () => nextSlide(true);
+document.addEventListener("DOMContentLoaded", () => {
+  startCarousel();
   updateCarousel();
-  startAutoScroll();
-
-  // Gestion du clic pour le bouton précédent
-  document.querySelector('.prev-btn').addEventListener('click', () => {
-    stopAutoScroll(); // Arrête le défilement auto
-    currentIndex = (currentIndex === 0) ? items.length - 1 : currentIndex - 1;
-    updateCarousel();
-    setTimeout(startAutoScroll, 8000); // Reprend après 8 secondes
-  });
-
-  // Gestion du clic pour le bouton suivant
-  document.querySelector('.next-btn').addEventListener('click', () => {
-    stopAutoScroll(); // Arrête le défilement auto
-    currentIndex = (currentIndex === items.length - 1) ? 0 : currentIndex + 1;
-    updateCarousel();
-    setTimeout(startAutoScroll, 8000); // Reprend après 8 secondes
-  });
 });
