@@ -536,8 +536,8 @@ img.rectangle {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0px 41vh;
-    margin-bottom: 6vh;
+    padding: 0px 17%;
+    margin-bottom: 3%;
 }
 
 .filter-buttons button {
@@ -560,8 +560,8 @@ img.rectangle {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0px 41vh;
-    margin-bottom: 4vh;
+    padding: 0px 17%;
+    margin-bottom: 3%;
 }
 .card {
     background-color: #FFF;
