@@ -122,7 +122,7 @@ header > img {
 header > *:nth-child(1) {
     top: 1.5em;
     left: 2.5em;
-    width: 2.3em;
+    width: 3.3em;
 }
 
 ul{
@@ -710,7 +710,7 @@ img.rectangle {
 }
 
 img.image_visuel {
-    width: 45em;
+    width: 56em;
     object-fit: contain;
 }
 
