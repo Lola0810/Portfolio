@@ -693,6 +693,7 @@ img.rectangle {
 
 .pop-up>div>.contenu_projet {
     width: 81vh;
+    margin-bottom: 7vh;
 
     /*width: 90%;
     margin: auto;*/
