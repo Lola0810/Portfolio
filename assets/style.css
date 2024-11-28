@@ -693,7 +693,6 @@ img.rectangle {
 
 .pop-up>div>.contenu_projet {
     width: 81vh;
-    margin-bottom: 7vh;
 
     /*width: 90%;
     margin: auto;*/
@@ -995,7 +994,7 @@ nav>a {
 @media screen and (max-width: 990px) {
     .pop-up>div>.contenu_projet {
         width: 70%;
-        margin: auto;
+        margin-bottom: 7vh !important;
     }
     #contact {
         width: 90%;
