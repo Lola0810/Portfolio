@@ -320,6 +320,36 @@ const PROJECTS = [
     {   
         type: "affiches",
         class: "projects",
+        title: "Infographie - Le SEO : les persona et intentions",
+        description: "Référencement",
+        thumbnail: "affiche-seo.webp",
+        duration: {
+            start: "Novembre 2023",
+            end: "Décembre 2023"
+        },
+        baseline: "Projet mmi",
+        assignments: [
+            "• Analyse et compréhension des enjeux du SEO",
+            "• Synthétisation des informations",
+            "• Vulgarisation des termes",
+            "• Benchmark d'infographies similaires",
+            "• Création d'une identité propre à l'infographie",
+            "• Design de l'affiche et adaptation à plusieurs formats (triple a4, grande infographie)",
+        ],
+        technologies: [
+            "Logiciels: Figma, Photoshop, Illustrator", 
+            "Outils de gestion de projet : Notion"
+        ],
+        softskill: "Créativité, Synthèse, Vulgarisation",
+        note: [
+            "",
+            ""
+        ]
+    },
+
+    {   
+        type: "affiches",
+        class: "projects",
         title: "Promotion d'un produit Brique House",
         description: "Design / Graphisme - 2024",
         thumbnail: "briquehouse.webp",
@@ -341,8 +371,8 @@ const PROJECTS = [
         ],
         softskill: "Analyse, Communication, Compétences linguistiques",
         note: [
-            "Création d'une affiche sur un produit afin de le promouvoir et de créer un design innovant et rafraichissant pour la marque",
-            "N'hésitez pas à regarder mon : <a href='https://www.canva.com/design/DAF4v1audBw/pnIEMRp4sh6kSsLn5gXwcA/view?utm_content=DAF4v1audBw&utm_campaign=designshare&utm_medium=link&utm_source=editor'>Book</a>"
+            "",
+            ""   
         ] 
     },
     
@@ -370,8 +400,39 @@ const PROJECTS = [
         ],
         softskill: "Entreprendre, Curiosité, Recherches",
         note: [
-            "Création d'un design d'application web pour permettre aux utilisateurs de réserver dans les 5 salles du Trégor facilement via une application.",
-            "À voir sur : <a href='https://www.canva.com/design/DAF4v1audBw/pnIEMRp4sh6kSsLn5gXwcA/view?utm_content=DAF4v1audBw&utm_campaign=designshare&utm_medium=link&utm_source=editor'>Book avec plus d'images</a>"
+            "",
+            ""        
         ]
     },
+
+    {   
+        type: "UX-UI",
+        class: "designs",
+        title: "Cuisto Rosetta - Ateliers de cuisine",
+        description: "Marketing et création d'entreprise fictive",
+        thumbnail: "cuisto-rosetta.webp",
+        duration: {
+            start: "Septembre 2024",
+            end: "Octobre 2024"
+        },
+        baseline: "Projet mmi",
+        assignments: [
+            "• Création d'une identité graphique et d'un design system.",
+            "• Etude des cibles",
+            "• Benchmark de l'existant",
+            "• Architecture de l'information et des éléments",
+            "• Création du contenu optimisé SEO",
+            "• Mockup",
+            "• Présentation de la solution à des financeurs fictifs"
+        ],
+        technologies: [
+            "Logiciels: Figma, Photoshop, Illustrator", 
+            "Outils de gestion de projet : Notion, Google Drive"
+        ],
+        softskill: "Créativité, Curiosité, Entreprendre",
+        note: [
+            "",
+            ""
+        ]
+    }
 ];

@@ -376,8 +376,13 @@ img.ligne_vectorielle {
     align-items: center;
 }
 
-.linksRS>img {
+.linksRS>a>img {
     margin-bottom: 2px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.linksRS>a:hover img {
+    transform: scale(1.1);
 }
 
 .group-components {
@@ -718,13 +723,18 @@ img.rectangle {
 
 .contenu_projet>h4 {
     margin-top: 2%;
+    font-size: 1.4rem;
 }
 
 .contenu_projet li {
     list-style-type: none;
     font-family: Satoshi_Regular;
     color: var(--text-color-);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+}
+
+.contenu_projet p {
+    font-size: 1.2rem;
 }
 
 img.image_visuel {
@@ -733,7 +743,7 @@ img.image_visuel {
 }
 
 .designs>div>.image_visuel {
-    width: 25em;
+    width: 30em;
 }
 
 ul.list-cv{
