@@ -83,6 +83,14 @@ function openDetails(project) {
                     <p>
                         ${project.softskill}
                     </p>
+                    
+                    <h4>Note</h4>
+                    <ul>
+                        ${project.note
+                            .map(note => `<li>${note}</li>`)
+                            .join("")
+                        }
+                    </ul>
                 </div>
             </div>
         </div>

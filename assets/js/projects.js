@@ -399,40 +399,69 @@ const PROJECTS = [
             "Langues : Anglais et Français"
         ],
         softskill: "Entreprendre, Curiosité, Recherches",
-        note: [
-            "",
-            ""        
+        note: [    
+            "Analyse et recherches : <a href='../assets/images/Projet-Analyse_Solutions_Email_2.0.pdf' target='_blank'>Analyse des technologies - Email</a>",
+            "Le projet : <a href='../assets/images/Projet-Proposition_de_solution_Email_2.0.pdf' target='_blank'>ZenBox</a>"
         ]
     },
 
     {   
         type: "UX-UI",
         class: "designs",
-        title: "Cuisto Rosetta - Ateliers de cuisine",
-        description: "Marketing et création d'entreprise fictive",
+        title: "Cuisto Rosetta - Ateliers de Cuisine",
+        description: "Serious Game - 2024",
         thumbnail: "cuisto-rosetta.webp",
         duration: {
-            start: "Septembre 2024",
-            end: "Octobre 2024"
+            start: "Novembre 2024",
+            end: "Novembre 2024"
         },
         baseline: "Projet mmi",
         assignments: [
-            "• Création d'une identité graphique et d'un design system.",
-            "• Etude des cibles",
-            "• Benchmark de l'existant",
-            "• Architecture de l'information et des éléments",
-            "• Création du contenu optimisé SEO",
-            "• Mockup",
-            "• Présentation de la solution à des financeurs fictifs"
+            "• Elaboration d’un business model et d’un business plan",
+            "• Création d’une plateforme de marque, d’un storytelling et d'un persona",
+            "• Définition de la stratégie de communication et de promotion web",
+            "• Conception de l’identité visuelle d’entreprise",
+            "• Analyse comportemental des utilisateurs et wireframe",
+            "• Conception du mockup et prototypage"
         ],
         technologies: [
-            "Logiciels: Figma, Photoshop, Illustrator", 
-            "Outils de gestion de projet : Notion, Google Drive"
+            "Logiciels: Figma, Photoshop, Affinity", 
+            "Gestion de projet : Notion"
+        ],
+        softskill: "Créativité, Analyse, Entreprendre",
+        note: [
+            "Accédez à mon projet sur mon Linkedin via ce lien : <a href='https://www.linkedin.com/in/lola-navarro/details/projects/1736332291166/single-media-viewer/?profileId=ACoAAD7obhkBRYUNrlgADEUOJvoGPAKyBMyMk8A' target='_blank'>Diapositive</a>"
+        ]
+    },
+
+    {   
+        type: "UX-UI",
+        class: "designs",
+        title: "Onfido - Identity Wallet",
+        description: "Workshop / Design sprint - 2024",
+        thumbnail: "onfido.webp",
+        duration: {
+            start: "Décembre 2024",
+            end: "Décembre 2024"
+        },
+        baseline: "Projet mmi",
+        assignments: [
+            "• Meeting avec le client en anglais",
+            "• Recherches documentaires sur les Identity Wallet",
+            "• Approfondir et détailler une opportunité sélectionnée par le client",
+            "• Création des scénarios d'usages",
+            "• Design d'une application mobile prototypée et de l'objet connecté",
+            "• Écriture d'un scénario et plans de coupe",
+            "• Représentation des scénarios d'usages dans un court-métrage (Acteur secondaire)"
+        ],
+        technologies: [
+            "Logiciels: Figma, Photoshop", 
+            "Audiovisuel"
         ],
         softskill: "Créativité, Curiosité, Entreprendre",
         note: [
-            "",
-            ""
+            "Analyse et propositions : <a href='../assets/images/Projet-Analyse_et_proposition_Identity_Wallet.pdf' target='_blank'>Analyse Identity Wallet</a>",
+            "Le projet : <a href='../assets/images/Projet-Proposition Identity_Wallet_Onfido.pdf' target='_blank'>Fingercard</a>"
         ]
     }
 ];

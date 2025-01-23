@@ -47,14 +47,14 @@ body {
 
 /* Stylisation des différentes balises qui ne changera pratiquement pas */
 h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-family: Satoshi_Black;
     max-width: 99%;
     line-height: 5rem;
     color: var(--main);
 }
 h2 {
-    font-size: 2.563rem;
+    font-size: 2rem;
     color: var(--main);
     /* font-family: Satoshi_Black;
     font-size: 3.75rem; */
@@ -197,8 +197,8 @@ header > nav > ul > li > a::before {
     align-items: center;
     flex-wrap: wrap;
 
-    gap: 20em;
-    margin-top: 11em;
+    gap: 18em;
+    margin-top: 4em;
 }
 #description {
     width: 80vh;
@@ -207,7 +207,7 @@ header > nav > ul > li > a::before {
 #description>h2 {
     color: var(--text-color);
     font-family: Satoshi_Medium !important;
-    font-size: 2.563rem !important;
+    font-size: 2rem !important;
     font-weight: normal;
     margin-left: -1vh;
     padding-bottom: 1vh;
@@ -227,7 +227,7 @@ header > nav > ul > li > a::before {
     color: var(--text-color);
     margin: 2vh auto;
     width: 83vh;
-    font-size: 1.563rem;
+    font-size: 1.4rem;
 }
 
 #animatedText span {
@@ -240,6 +240,11 @@ header > nav > ul > li > a::before {
     bottom: -1em;
     opacity: 0;
     animation: move-text 0.75s forwards;
+}
+
+#button-cv {
+    padding-right: 5vh;
+    padding-left: 5vh;
 }
 
 @keyframes move-text {
@@ -289,29 +294,29 @@ header > nav > ul > li > a::before {
 
 
 #round {
-    width: 15em;
-    height: 15em;
-
+    width: 13em;
+    height: 13em;
+    
     position: relative;
 }
 #round>* {
     position: absolute;
 }
 #round>:nth-child(2) {
-    left: 10%;
+    left: 16%;
+    top: 4%;
 }
 #round>:nth-child(1) {
     left: -53%;
     top: -55%;
 }
 #round>:nth-child(3) {
-    left: -38%;
-    top: -41%;
+    left: -35%;
+    top: -38%;
     opacity: 1;
 
     animation: rotate 6s linear infinite;
 }
-
 .hidden {
     display: none;
 }
@@ -320,7 +325,7 @@ header > nav > ul > li > a::before {
 /* Décorations vectorielles */
 img#scroll {
     display: block;
-    margin: 8em auto;
+    margin: 5em auto;
     animation: bounce_vertically 2s infinite;
 }
 
@@ -355,7 +360,7 @@ img.ligne_vectorielle {
 .description-me {
     font-family: 'Satoshi_Regular';
     color: var(--text-color);
-    font-size: 1.463rem;
+    font-size: 1.3rem;
 
     background-color: #FFF;
     border-radius: 22px;
@@ -406,18 +411,19 @@ img.ligne_vectorielle {
 }
 
 .general-infos>div>h4 {
-    font-size: 1.938rem;
+    font-size: 1.5rem;
     text-transform: none;
 }
 
 .general-infos>div:nth-child(1)>p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-left: 1rem;
 }
 
 .general-infos>div:nth-child(2)>img {
     width: 75%;
 }
+
 
 
 .quote {
@@ -430,13 +436,13 @@ img.ligne_vectorielle {
 .quote>span {
     font-family: 'Satoshi_Bold';
     color: var(--main);
-    font-size: 1.563rem;
+    font-size: 1.5rem;
 }
 
 .quote>p {
     font-family: 'Satoshi_Regular';
     color: var(--text-color);
-    font-size: 1.563rem;
+    font-size: 1.3rem;
     text-align: end;
     padding-top: 4%;
 }
@@ -444,7 +450,7 @@ img.ligne_vectorielle {
 .carousel {
     font-family: 'Satoshi_Regular';
     color: var(--text-color);
-    font-size: 1.563rem;
+    font-size: 1.3rem;
 
     background-color: #FFF;
     border-radius: 22px;
@@ -474,6 +480,7 @@ img.ligne_vectorielle {
     margin-top: 21%;
     margin-bottom: 21%;
     text-align: center;
+    font-size: 1.6rem;
 }
 
 .carousel-item>ul {
@@ -515,6 +522,7 @@ div#skills>div {
 .ligne_vectorielle2 {
     position: absolute;
     top: 100%;
+    z-index: -99;
 }
 /* END SKILLS */
 
@@ -692,18 +700,19 @@ img.rectangle {
 
 .close {
     text-align: center;
-
+    
     color: var(--main);
     border: 2px solid var(--main);
     border-radius: 100%;
 
-    padding: 2px 22px;
+    padding: 2px 17px;
     cursor: pointer;
-    font-size: 4em;
+    font-size: 3em;
 
     display: block;
     width: fit-content;
-    margin: .8em auto;
+    margin: 0.3em auto;
+    /* margin-bottom: 0.9em; */
 }
 
 .pop-up>div {
@@ -715,35 +724,33 @@ img.rectangle {
 }
 
 .pop-up>div>.contenu_projet {
-    width: 81vh;
-
-    /*width: 90%;
-    margin: auto;*/
+    width: 92vh;
+    margin: 4% 0;
 }
 
 .contenu_projet>h4 {
     margin-top: 2%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .contenu_projet li {
     list-style-type: none;
     font-family: Satoshi_Regular;
     color: var(--text-color-);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .contenu_projet p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 img.image_visuel {
-    width: 56em;
+    width: 48%;
     object-fit: contain;
 }
 
 .designs>div>.image_visuel {
-    width: 30em;
+    width: 26%;
 }
 
 ul.list-cv{
@@ -774,15 +781,19 @@ li.list-cv{
     display: flex;
         
     width: fit-content;
-    margin: 2em auto;
+    margin: 0 auto;
 
     border-radius: 4vh;
     box-shadow: 0px 0px 16px 1px #FEB0CD;
 }
 
 #contact p {
-    font-size: 1.463rem;
+    font-size: 1.3rem;
     width: 89%;
+}
+
+#contact>img:nth-child(1) {
+    width: 28%;
 }
 
 
@@ -800,7 +811,11 @@ li.list-cv{
 .left-infos>p {
     padding-left: 3vh;
     padding-bottom: 3%;
+    
+    width: 74% !important;
+    margin-left: 12vh;
 }
+
 
 .basic-infos {
     display: flex;
@@ -813,7 +828,7 @@ li.list-cv{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
 }
 
 .basic-infos img {
