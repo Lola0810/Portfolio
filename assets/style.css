@@ -230,6 +230,11 @@ header > nav > ul > li > a::before {
     font-size: 1.4rem;
 }
 
+#description>p>b {
+    font-weight: normal;
+    font-size: 18px;
+}
+
 #animatedText span {
     color: var(--main);
     position: relative;

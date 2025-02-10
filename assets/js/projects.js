@@ -321,7 +321,7 @@ const PROJECTS = [
         type: "affiches",
         class: "projects",
         title: "Infographie - Le SEO : les persona et intentions",
-        description: "Référencement",
+        description: "Référencement - 2024  ",
         thumbnail: "affiche-seo.webp",
         duration: {
             start: "Novembre 2023",
@@ -406,11 +406,11 @@ const PROJECTS = [
     },
 
     {   
-        type: "UX-UI",
+        type: "affiches",
         class: "designs",
         title: "Cuisto Rosetta - Ateliers de Cuisine",
         description: "Serious Game - 2024",
-        thumbnail: "cuisto-rosetta.webp",
+        thumbnail: "cuisto_rosetta_affiche.png",
         duration: {
             start: "Novembre 2024",
             end: "Novembre 2024"
@@ -430,7 +430,7 @@ const PROJECTS = [
         ],
         softskill: "Créativité, Analyse, Entreprendre",
         note: [
-            "Accédez à mon projet sur mon Linkedin via ce lien : <a href='https://www.linkedin.com/in/lola-navarro/details/projects/1736332291166/single-media-viewer/?profileId=ACoAAD7obhkBRYUNrlgADEUOJvoGPAKyBMyMk8A' target='_blank'>Diapositive</a>"
+            "Maquette accessible ici : <a href='../assets/images/thumbnail/cuisto-rosetta.webp' target='_blank'>Maquette</a>"
         ]
     },
 
@@ -462,6 +462,68 @@ const PROJECTS = [
         note: [
             "Analyse et propositions : <a href='../assets/images/Projet-Analyse_et_proposition_Identity_Wallet.pdf' target='_blank'>Analyse Identity Wallet</a>",
             "Le projet : <a href='../assets/images/Projet-Proposition Identity_Wallet_Onfido.pdf' target='_blank'>Fingercard</a>"
+        ]
+    },
+    {   
+        type: "affiches",
+        class: "projects",
+        title: "Cooper - Signalétique de Tri",
+        description: "Projet IRIS-E - 2024",
+        thumbnail: "visuels_cooper.png",
+        duration: {
+            start: "Décembre 2024",
+            end: "Décembre 2024"
+        },
+        baseline: "Projet mmi",
+        assignments: [
+            "• Visites du makerspace et analyse des techniques d'impression",
+            "• Atelier créatif & brainstorming des idées",
+            "• Conception approfondie du concept (La mascotte, ton & Valeurs, univers graphique, storytelling)",
+            "• Etude du parcours utilisateur sur l’utilisation des poubelles de tri",
+            "• Conception de visuels liés au concept (stickers, affiches, flyers affiche et plan de masse)",
+            "• Réflexion sur les possibilités futures lié au concept",
+            "• Création d’un dossier technique (visuels et mise en scène, cotes, chiffrages)",
+            "• Réalisation des différents supports (stickers, affiches, flyers) au makerspace",
+        ],
+        technologies: [
+            "Logiciels: Figma, Photoshop, Illustrator, Affinity", 
+            "Impression print & stickers : fichiers EPS avec cutcontour"
+        ],
+        softskill: "Créativité, Curiosité, Techniques d'impression",
+        note: [
+            "Dossier de projet : <a href='../assets/images/Dossier-Signalétique.pdf' target='_blank'>Présentation du concept</a>",
+            "Dossier technique : <a href='../assets/images/Dossier-Technique-Signalétique.pdf' target='_blank'>Technique & cotes</a>"
+        ]
+    },
+
+    {   
+        type: "affiches",
+        class: "projects",
+        title: "Design d'espace - Revégétalisation",
+        description: "Projet IRIS-E - 2025",
+        thumbnail: "Revegetalisation-Halles.png",
+        duration: {
+            start: "Janvier 2024",
+            end: "Janvier 2024"
+        },
+        baseline: "Projet mmi",
+        assignments: [
+            "• Analyse du sujet et choix du lieu",
+            "• Recherches sur la flore dans les Côtes d'Armor",
+            "• Prise photo du lieu sous tous ses angles",
+            "• Retouche photo ",
+            "• Composition graphique de l'affiche : dessin sur photo",
+            "• Conception de l'affiche de présentation",
+            "• Impression 60x90",
+            "• Découpe et affichage des réalisations dans le Hall de l'IUT",
+        ],
+        technologies: [
+            "Logiciels: Figma, Photoshop, Illustrator, Affinity", 
+            ""
+        ],
+        softskill: "Créativité, Curiosité, Techniques d'impression",
+        note: [
+            "Ce n'est pas la version finale de l'affiche."
         ]
     }
 ];
