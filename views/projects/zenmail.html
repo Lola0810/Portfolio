@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lola - Portfolio</title>
+
+    <link rel="stylesheet" href="../../style/project.css">
+    <link rel="stylesheet" href="../../style/common.css">
+    <link rel="icon" type="image/png" href="../../assets/images/icons/butterfly.svg">
+    <script>
+      const copyEmail = () => {
+          const emailText = document.getElementById("emailText").textContent;
+          navigator.clipboard.writeText(emailText).then(() => {
+          }).catch(err => {
+          console.error("Failed to copy email: ", err);
+          });
+      }
+      </script>
+</head>
+<body>
+  <section class="main-content">
+    <header>
+      <img src="../../assets/images/icons/butterfly.svg" alt>
+
+      <nav>
+          <ul>
+              <li><a href="../../index.html">Accueil</a></li>
+              <li><a href="../projects.html">Projets</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="container">
+        <div class="project-header">
+          <a href="../projects.html"><button>RETOUR</button></a>
+
+          <h1 class="project-title">Zenmail, Mode Zero Inbox</h1>
+          <p class="subtitle">Projet Universitaire | Design d'expérience - 2024</p>
+        </div>
+    
+        <nav class="category-buttons">
+          <div class="category-button">Design de service</div>
+        </nav>
+    
+        <div class="project-showcase">
+          <img src="../../assets/images/projects/zenmail/banner.png" class="project-image">
+        </div>
+
+        <section class="sub-container">
+          <section class="context-section">
+            <h2 class="context-heading">Contexte</h2>
+            <p class="context-text">
+                Dans le cadre d’un projet universitaire en 2ᵉ année de MMI et en équipe, l’objectif était d’améliorer et de renouveler les systèmes et services de messagerie électronique.
+                Nous avons conçu ZenMail, une messagerie électronique axée sur la productivité, intégrant la méthode "Zéro Inbox" pour un meilleur classement des e-mails. 
+                <br/>
+                Dans un premier temps, une vue classique en liste avec un choix d’état, accessible via un menu déroulant et/ou par un système de drag and drop.
+                Et dans un second temps, une vue Kanban permettant de trier ses mails sous forme de tableau, où chaque colonne représente un état (A faire, Remis à plus tard, En attente d’une réponse, Transféré et Fait).
+            </p>
+          </section>
+  
+          <section class="mission-section">
+            <div class="mission-container">
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Initialisation</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Recherches documentaires</span> <br/>
+                        Analyse du sujet, de l’environnement technologique et de l'existant.</li>
+                      <li><span class="highlight">Cartographie des opportunités</span> <br/>
+                      3 solutions & la problématique design à laquelle elle répond</li>
+                  </ul>
+                </div>
+              </article>
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/zenmail/illu1.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="mission-section">
+            <div class="mission-container">
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/zenmail/illu2.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Conception</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Définition précise de l'opportunité</span> <br/>
+                    Scénario d’usage & flow des pages</li>
+                    <li><span class="highlight">Conception de la maquette</span> <br/>
+                    Wireframe puis mockup</li>
+          
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="competences-container">
+            <img src="../../assets//images/icons/butterflyIcon.svg" alt="Butterfly icon" class="butterfly-icon">
+            <h2 class="competences-title">Compétences mobilisées</h2>
+          
+            <div class="skills-container">
+              <span class="skill-pill">Recherche documentaire</span>
+              <span class="skill-pill">Analyse des besoins</span>
+              <span class="skill-pill">Conception d'interface</span>
+            </div>
+          
+            <div class="tools-container">
+              <img class="tool-icon" src="../../assets/images/icons/figma.png"/>
+              <img class="tool-icon" src="../../assets/images/icons/excel.svg"/>
+              <img class="tool-icon" src="../../assets/images/icons/ps.svg"/>
+            </div>
+          
+            <p class="competences-description">
+                Ce projet m'a permis de comprendre l’importance d’effectuer des recherches approfondies pour identifier des solutions adaptées aux besoins des utilisateurs. J’ai également renforcé mes compétences en conception de parcours utilisateur et flow.
+            </p>
+          </section>
+
+        </section>
+
+        <section class="note-container">
+          <div class="content-wrapper">
+            <div class="image-column">
+              <img
+                src="../../assets/images/projects/zenmail/illu3.png"
+                alt="Feature image"
+                class="feature-image"
+              />
+            </div>
+            <div class="text-column">
+              <div class="text-content">
+                <span class="context-heading">Résultat</span>
+                <p class="note-description">
+                  <a href="../../assets/pdf/Projet-Analyse_Solutions_Email_2.0.pdf">Phase d'analyse</a>
+                  <br/>
+                  <a href="../../assets/pdf/Projet-Proposition_de_solution_Email_2.0.pdf">Proposition de solution</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <p class="quick-response">Et en plus je réponds vite !</p>
+            <a id="emailText" class="email-container" onclick="copyEmail()">
+              <span class="email-text">contact@lolanavarro.fr</span>
+              <img
+                src="../../assets/images/icons/copy-white.svg"
+                alt="Email icon"
+                class="email-icon"
+              />
+            </a>
+            <div class="friendly-message">
+              <img
+                src="../../assets/images/icons/arrow.svg"
+                alt="Message icon"
+                class="message-icon"
+              />
+              <p class="message-text">Aller je ne mords peut-être pas ;)</p>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="cta-section">
+            <h2 class="cta-question">Je vous ai convaincu ?</h2>
+            <p class="cta-action">C'est parti !</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/cv_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/book_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/linkedin_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                    src="../../assets/images/icons/github_footer_button.svg"
+                    alt="Social media icon"
+                    class="social-icon"
+                  />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                      src="../../assets/images/icons/bento_footer_button.svg"
+                      alt="Social media icon"
+                      class="social-icon"
+                  />
+              </a>
+            </div>
+            <p class="copyright">Site créé avec ❤ par Lola Navarro 2025</p>
+          </section>
+
+          <!-- Navigation Section -->
+          <nav class="nav-section">
+            <h2 class="nav-title">Navigation</h2>
+            <div class="nav-links">
+              <a href="../index.html" style="color: inherit; text-decoration: none"
+                >Accueil</a
+              ><br />
+              <a href="#" style="color: inherit; text-decoration: none"
+                >Projets</a
+              ><br />
+              <a href="./contact.html" style="color: inherit; text-decoration: none"
+                >Contact</a
+              >
+            </div>
+          </nav>
+      </div>
+    </div>
+</footer>
+</body>
+</html>

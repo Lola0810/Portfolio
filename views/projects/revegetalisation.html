@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lola - Portfolio</title>
+
+    <link rel="stylesheet" href="../../style/project.css">
+    <link rel="stylesheet" href="../../style/common.css">
+    <link rel="icon" type="image/png" href="../../assets/images/icons/butterfly.svg">
+    <script>
+      const copyEmail = () => {
+          const emailText = document.getElementById("emailText").textContent;
+          navigator.clipboard.writeText(emailText).then(() => {
+          }).catch(err => {
+          console.error("Failed to copy email: ", err);
+          });
+      }
+      </script>
+</head>
+<body>
+  <section class="main-content">
+    <header>
+      <img src="../../assets/images/icons/butterfly.svg" alt>
+
+      <nav>
+          <ul>
+              <li><a href="../../index.html">Accueil</a></li>
+              <li><a href="../projects.html">Projets</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="container">
+        <div class="project-header">
+          <a href="../projects.html"><button>RETOUR</button></a>
+
+          <h1 class="project-title">Solutions pour la transition environnementale</h1>
+          <p class="subtitle">Projet Universitaire Iris-E - 2025</p>
+        </div>
+    
+        <nav class="category-buttons">
+          <div class="category-button">Design d'espace</div>
+          <div class="category-button">Design graphique</div>
+        </nav>
+    
+        <div class="project-showcase">
+          <img src="../../assets/images/projects/revegetalisation/banner.png" class="project-image">
+        </div>
+
+        <section class="sub-container">
+          <section class="context-section">
+            <h2 class="context-heading">Contexte</h2>
+            <p class="context-text">
+              Dans le cadre d’un projet universitaire en MMI et d’un appel à projet IRIS E de l'Université de Rennes, nous avons collaboré avec des étudiants en BUT Mesures Physiques pour explorer des solutions innovantes en faveur de la transition environnementale à l’IUT.
+              <br/>
+              En ciblant l’ODD "Santé & Bien-être", nous avons imaginé un système de prise de rendez-vous pour médecins, psychologues et cours de sport/nutrition gratuits, accessible via une application pour les étudiants de l’IUT de Lannion.
+              Notre réflexion s’est appuyée sur une représentation systémique, intégrant les acteurs du projet et les contraintes locales.
+              <br/>
+              Nous avons également travaillé sur la revégétalisation d'espace, dont le marché des Halles, un espace peu végétalisé mais propice aux échanges, a été envisagé comme un lieu clé pour favoriser le bien-être des citoyens.
+          </section>
+  
+          <section class="mission-section">
+            <div class="mission-container">
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Idéation</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Recherches documentaires sur l’environnement actuel</span> <br/>
+                       Technologies émergentes, solutions pour la transition environnementale, initiatives des pays - COP21, …</li>
+                    <li><span class="highlight">Cartographie des opportunités</span> <br/>
+                      En fonction des recherches : 1 solution par personne : QQOQCP, Faisabilité</li>
+                      <li><span class="highlight">Catalogue des Possibles</span> <br/>
+                        Formulation de la proposition et représentation systémique sur le fonctionnement du projet</li>
+                      
+
+          
+                  </ul>
+                </div>
+              </article>
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/revegetalisation/catalogue.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="mission-section">
+            <div class="mission-container">
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/revegetalisation/illu1.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Prototype</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Photographie du lieu</span></li>
+                    <li><span class="highlight">Re-végétalisation d’espaces</span> <br/>
+                    Analyse des plantes de la region, retouche photo, dessin numérique sur image</li>
+                    <li><span class="highlight">Exposition</span> <br/>
+                     Impression et exposition des réalisations au hall de l’IUT</li>
+          
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="competences-container">
+            <img src="../../assets//images/icons/butterflyIcon.svg" alt="Butterfly icon" class="butterfly-icon">
+            <h2 class="competences-title">Compétences mobilisées</h2>
+          
+            <div class="skills-container">
+              <span class="skill-pill">Innovation</span>
+              <span class="skill-pill">Photographie</span>
+              <span class="skill-pill">Dessin</span>
+            </div>
+          
+            <div class="tools-container">
+              <img class="tool-icon" src="../../assets/images/icons/Ai.svg"/>
+              <img class="tool-icon" src="../../assets/images/icons/ps.svg"/>
+              <img class="tool-icon" src="../../assets/images/icons/affinity.png"/>
+            </div>
+          
+            <p class="competences-description">
+              Ce projet a été très enrichissant. Il m'a permis de développer des compétences en analyse de l’existant, en idéation et en représentation systémique pour proposer des solutions adaptées aux enjeux environnementaux et de santé.
+            </p>
+          </section>
+
+          <section class="note-container">
+            <div class="content-wrapper">
+              <div class="image-column">
+                <img
+                  src="../../assets/images/projects/revegetalisation/illu2.png"
+                  alt="Feature image"
+                  class="feature-image"
+                />
+              </div>
+              <div class="text-column">
+                <div class="text-content">
+                  <span class="context-heading">Résultat</span>
+                  <p class="note-description">
+                    Le catalogue des possibles et l'affiche a été affichée dans le hall de l'IUT pour promouvoir l'initiative IRIS E.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+    </main>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <p class="quick-response">Et en plus je réponds vite !</p>
+            <a id="emailText" class="email-container" onclick="copyEmail()">
+              <span class="email-text">contact@lolanavarro.fr</span>
+              <img
+                src="../../assets/images/icons/copy-white.svg"
+                alt="Email icon"
+                class="email-icon"
+              />
+            </a>
+            <div class="friendly-message">
+              <img
+                src="../../assets/images/icons/arrow.svg"
+                alt="Message icon"
+                class="message-icon"
+              />
+              <p class="message-text">Aller je ne mords peut-être pas ;)</p>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="cta-section">
+            <h2 class="cta-question">Je vous ai convaincu ?</h2>
+            <p class="cta-action">C'est parti !</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/cv_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/book_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/linkedin_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                    src="../../assets/images/icons/github_footer_button.svg"
+                    alt="Social media icon"
+                    class="social-icon"
+                  />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                      src="../../assets/images/icons/bento_footer_button.svg"
+                      alt="Social media icon"
+                      class="social-icon"
+                  />
+              </a>
+            </div>
+            <p class="copyright">Site créé avec ❤ par Lola Navarro 2025</p>
+          </section>
+
+          <!-- Navigation Section -->
+          <nav class="nav-section">
+            <h2 class="nav-title">Navigation</h2>
+            <div class="nav-links">
+              <a href="../index.html" style="color: inherit; text-decoration: none"
+                >Accueil</a
+              ><br />
+              <a href="#" style="color: inherit; text-decoration: none"
+                >Projets</a
+              ><br />
+              <a href="./contact.html" style="color: inherit; text-decoration: none"
+                >Contact</a
+              >
+            </div>
+          </nav>
+      </div>
+    </div>
+</footer>
+</body>
+</html>

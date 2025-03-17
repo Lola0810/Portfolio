@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lola - Portfolio</title>
+
+    <link rel="stylesheet" href="../../style/project.css">
+    <link rel="stylesheet" href="../../style/common.css">
+    <link rel="icon" type="image/png" href="../../assets/images/icons/butterfly.svg">
+    <script>
+      const copyEmail = () => {
+          const emailText = document.getElementById("emailText").textContent;
+          navigator.clipboard.writeText(emailText).then(() => {
+          }).catch(err => {
+          console.error("Failed to copy email: ", err);
+          });
+      }
+      </script>
+</head>
+<body>
+  <section class="main-content">
+    <header>
+      <img src="../../assets/images/icons/butterfly.svg" alt>
+
+      <nav>
+          <ul>
+              <li><a href="../../index.html">Accueil</a></li>
+              <li><a href="../projects.html">Projets</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="container">
+        <div class="project-header">
+          <h1 class="project-title">Re-végétalisation de Lannion</h1>
+          <p class="subtitle">Projet Universitaire Iris-E - 2025</p>
+        </div>
+    
+        <nav class="category-buttons">
+          <div class="category-button">Design graphique</div>
+          <div class="category-button">Design d'espace</div>
+        </nav>
+    
+        <div class="project-showcase">
+          <img src="../../assets/images/projects/demo/banner.png" alt="Lannion revitalization project" class="project-image">
+        </div>
+
+        <section class="sub-container">
+          <section class="context-section">
+            <h2 class="context-heading">Contexte</h2>
+            <p class="context-text">
+              Le projet Iris-e est Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at luctus ante. Suspendisse et mi at turpis pulvinar gravida et sed erat. Nulla placerat dui a varius aliquam. Nullam vitae suscipit ipsum. Integer vitae lacinia enim. Morbi laoreet felis lectus, in finibus velit elementum vel. Sed pretium enim at iaculis rutrum. In ac velit nec nunc fermentum dictum. Mauris id tincidunt urna, ut bibendum neque. Ut hendrerit quam libero, eget semper mi dictum sit amet. Mauris lobortis tincidunt molestie.
+            </p>
+          </section>
+  
+          <section class="mission-section">
+            <div class="mission-container">
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Mission</h2>
+                  <ul class="mission-list">
+                    <li>Analyse du sujet et choix du lieu</li>
+                    <li>Recherches sur la flore dans les Côtes d'Armor</li>
+                    <li>Prise photo du lieu sous tous ses angles</li>
+                    <li>Retouche photo</li>
+                    <li>Composition graphique de l'affiche : dessin sur photo</li>
+                    <li>Conception de l'affiche de présentation</li>
+                    <li>Impression et découpe</li>
+                    <li>Affichage des réalisations dans le Hall de l'IUT</li>
+                  </ul>
+                </div>
+              </article>
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/demo/illu1.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="competences-container">
+            <img src="../../assets//images/icons/butterflyIcon.svg" alt="Butterfly icon" class="butterfly-icon">
+            <h2 class="competences-title">Compétences mobilisées</h2>
+          
+            <div class="skills-container">
+              <span class="skill-pill">Créativité</span>
+              <span class="skill-pill">Réflexion graphique</span>
+              <span class="skill-pill">Curiosité</span>
+            </div>
+          
+            <div class="tools-container">
+              <img class="tool-icon" src="../../assets/images/icons/ps.svg"/>
+              <img class="tool-icon" src="../../assets/images/icons/Ai.svg"/>
+              <img class="tool-icon" src="../../assets/images/icons/procreate.svg"/>
+              <img class="tool-icon" src="../../assets/images/icons/id.svg"/>
+            </div>
+          
+            <p class="competences-description">
+              Ce projet a été très enrichissant, d'abord par blalblablablalblabla reet
+              felis lectus, in finibus velit elementum vel. Sed pretium enim at iaculis
+              rutrum. In ac velit nec nunc fermentum dictum. Mauris id tincidunt urna, .
+              Mauris id tincidunt urna, ut bibendum neque.
+            </p>
+          </section>
+
+          <section class="note-container">
+            <div class="content-wrapper">
+              <div class="image-column">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/49d6ba0bdac04fc8b01a20a7409669d4/5ee7ee16ba87a760b0c0c1a9f657ee00db4da64d93fb276b69eb68684ffa9ff8?placeholderIfAbsent=true"
+                  alt="Feature image"
+                  class="feature-image"
+                />
+              </div>
+              <div class="text-column">
+                <div class="text-content">
+                  <span class="context-heading">Note</span>
+                  <p class="note-description">
+                    bloupblipbloup
+                    <br />
+                    caca
+                    <br />
+                    Lien ici : bim
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+    </main>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <p class="quick-response">Et en plus je réponds vite !</p>
+            <a id="emailText" class="email-container" onclick="copyEmail()">
+              <span class="email-text">contact@lolanavarro.fr</span>
+              <img
+                src="../../assets/images/icons/copy-white.svg"
+                alt="Email icon"
+                class="email-icon"
+              />
+            </a>
+            <div class="friendly-message">
+              <img
+                src="../../assets/images/icons/arrow.svg"
+                alt="Message icon"
+                class="message-icon"
+              />
+              <p class="message-text">Aller je ne mords peut-être pas ;)</p>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="cta-section">
+            <h2 class="cta-question">Je vous ai convaincu ?</h2>
+            <p class="cta-action">C'est parti !</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/cv_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/book_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/linkedin_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                    src="../../assets/images/icons/github_footer_button.svg"
+                    alt="Social media icon"
+                    class="social-icon"
+                  />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                      src="../../assets/images/icons/bento_footer_button.svg"
+                      alt="Social media icon"
+                      class="social-icon"
+                  />
+              </a>
+            </div>
+            <p class="copyright">Site créé avec ❤ par Lola Navarro 2025</p>
+          </section>
+
+          <!-- Navigation Section -->
+          <nav class="nav-section">
+            <h2 class="nav-title">Navigation</h2>
+            <div class="nav-links">
+              <a href="../index.html" style="color: inherit; text-decoration: none"
+                >Accueil</a
+              ><br />
+              <a href="#" style="color: inherit; text-decoration: none"
+                >Projets</a
+              ><br />
+              <a href="./contact.html" style="color: inherit; text-decoration: none"
+                >Contact</a
+              >
+            </div>
+          </nav>
+      </div>
+    </div>
+</footer>
+</body>
+</html>

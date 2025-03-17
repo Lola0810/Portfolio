@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lola - Portfolio</title>
+
+    <link rel="stylesheet" href="../../style/project.css">
+    <link rel="stylesheet" href="../../style/common.css">
+    <link rel="icon" type="image/png" href="../../assets/images/icons/butterfly.svg">
+    <script>
+      const copyEmail = () => {
+          const emailText = document.getElementById("emailText").textContent;
+          navigator.clipboard.writeText(emailText).then(() => {
+          }).catch(err => {
+          console.error("Failed to copy email: ", err);
+          });
+      }
+      </script>
+</head>
+<body>
+  <section class="main-content">
+    <header>
+      <img src="../../assets/images/icons/butterfly.svg" alt>
+
+      <nav>
+          <ul>
+              <li><a href="../../index.html">Accueil</a></li>
+              <li><a href="../projects.html">Projets</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="container">
+        <div class="project-header">
+          <a href="../projects.html"><button>RETOUR</button></a>
+
+          <h1 class="project-title">Cuisto Rosetta, ateliers de cuisine</h1>
+          <p class="subtitle">Projet Universitaire | CréaSim - Novembre 2024</p>
+        </div>
+    
+        <nav class="category-buttons">
+          <div class="category-button">UX/UI Design</div>
+          <div class="category-button">Marketing</div>
+          <div class="category-button">Communication</div>
+          <div class="category-button">Design graphique</div>
+        </nav>
+    
+        <div class="project-showcase">
+          <img src="../../assets/images/projects/cuisto-rosetta/banner.png" class="project-image">
+        </div>
+        
+
+        <section class="sub-container">
+          <section class="context-section">
+            <h2 class="context-heading">Contexte</h2>
+            <p class="context-text">
+              En équipe de 6, j'ai participé à un Serious Game Marketing "CréaSim" qui visait à simuler la création d'une entreprise répondant aux besoins du  marché et de la concurrence. L’objectif de ce projet était de mobiliser toutes nos compétences développées lors de ces 3 années de BUT MMI. <br/>
+              C'est de la que CUISTO ROSETTA est née. Présente en centre-ville de Toulouse, elle propose aux actifs,  particuliers et entreprises des cours de cuisine s'adaptant aux saisons et sous plusieurs formes. <br/>
+              Lors de ce projet, j’ai géré mon équipe et travaillé essentiellement sur la maquette et la communication.
+            </p>
+          </section>
+  
+          <section class="mission-section">
+            <div class="mission-container">
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Initialisation</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Elaboration d’un business model et d’un business plan</span> <br/>
+                    Identification des clients cibles, de l’avantage concurrentielle et la proposition de valeur</li>
+                    <li><span class="highlight">Création d’une plateforme de marque</span> <br/>
+                      Storytelling, mission et vision de l’entreprise, ...</li>
+                  </ul>
+                </div>
+              </article>
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/cuisto-rosetta/illu1.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+            </div>
+          </section>
+          
+
+          <section class="mission-section">
+            <div class="mission-container">
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/cuisto-rosetta/illu2.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Idéation & Conception</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Définition de la stratégie de communication et de promotion web</span> <br/>
+                      Canaux de communication priorisées, création de contenu editorial et de visuels, puis choix d’un type de site internet (actif et non statique)</li>
+                    <li><span class="highlight"> Conception de l’identité visuelle d’entreprise</span> <br/>
+                      Charte graphique, logo, slogan</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="mission-section">
+            <div class="mission-container">
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Prototypage</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Analyse comportementale des utilisateurs</span> <br/>
+                      Analyse des pratiques pour la réservation d’ateliers de cuisine, benchmark de sites concurrents</li>
+                    <li><span class="highlight">Conception de l’architecture des pages et flow</span> <br/>
+                      Structure de l’information des différentes pages et fonctionnalités (Wireframe), architecture des pages (Flow)</li>
+                    <li><span class="highlight">Conception de la maquette </span> <br/>
+                      Kit UI, design d’interface, mockup, rédaction du contenu</li>
+                  </ul>
+                </div>
+              </article>
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/cuisto-rosetta/illu3.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="competences-container">
+            <img src="../../assets//images/icons/butterflyIcon.svg" alt="Butterfly icon" class="butterfly-icon">
+            <h2 class="competences-title">Compétences mobilisées</h2>
+          
+            <div class="skills-container">
+              <span class="skill-pill">UI Design</span>
+              <span class="skill-pill">Stratégie de communication</span>
+              <span class="skill-pill">Gestion financière </span>
+            </div>
+          
+            <div class="tools-container">
+              <img class="tool-icon" src="../../assets/images/icons/figma.png"/>
+              <img class="tool-icon" src="../../assets/images/icons/Ai.svg"/>
+              <img class="tool-icon" src="../../assets/images/icons/notion.png"/>
+              <img class="tool-icon" src="../../assets/images/icons/ps.svg"/>
+            </div>
+          
+            <p class="competences-description">
+              Ce projet a été très enrichissant car j’ai appliqué toutes mes compétences apprises en MMI dans un gros projet. Il était également très challengeant car pour une courte période de temps nous avions énormément de production à réaliser tout en gérant notre entreprise fictive et les évolutions du marché. <br/>
+C’est également à ce moment là que mon équipe m’a confié l’entière responsabilité de la maquette et de l’organisation du projet.
+            </p>
+          </section>
+
+          <section class="note-container">
+            <div class="content-wrapper">
+              <div class="image-column">
+                <img
+                  src="../../assets/images/projects/cuisto-rosetta/illu4.png"
+                  alt="Feature image"
+                  class="feature-image"
+                />
+              </div>
+              <div class="text-column">
+                <div class="text-content">
+                  <span class="context-heading">Résultat</span>
+                  <p class="note-description">
+                    Notre entreprise a finie 2ème en terme de chiffre d’affaire mais 1ère en part de marchés ! <br/>
+                    C’est une victoire pour notre équipe qui s’est démené pour faire face à la concurrence.
+                    <br />
+                    <a href="../../assets/pdf/CuistoRosetta_PrésentationFinale.pdf">Support de présentation</a>
+                    <br />
+                    <a href="https://www.figma.com/proto/cJEDFe17pYcmmBoYkh2D32/Serious-game?node-id=3-2&viewport=-22%2C302%2C0.14&t=ROEJETzBZHbKDFg2-0&scaling=contain&content-scaling=fixed&starting-point-node-id=3%3A2&show-proto-sidebar=1">Lien de la maquette</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+    </main>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <p class="quick-response">Et en plus je réponds vite !</p>
+            <a id="emailText" class="email-container" onclick="copyEmail()">
+              <span class="email-text">contact@lolanavarro.fr</span>
+              <img
+                src="../../assets/images/icons/copy-white.svg"
+                alt="Email icon"
+                class="email-icon"
+              />
+            </a>
+            <div class="friendly-message">
+              <img
+                src="../../assets/images/icons/arrow.svg"
+                alt="Message icon"
+                class="message-icon"
+              />
+              <p class="message-text">Aller je ne mords peut-être pas ;)</p>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="cta-section">
+            <h2 class="cta-question">Je vous ai convaincu ?</h2>
+            <p class="cta-action">C'est parti !</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/cv_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/book_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/linkedin_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                    src="../../assets/images/icons/github_footer_button.svg"
+                    alt="Social media icon"
+                    class="social-icon"
+                  />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                      src="../../assets/images/icons/bento_footer_button.svg"
+                      alt="Social media icon"
+                      class="social-icon"
+                  />
+              </a>
+            </div>
+            <p class="copyright">Site créé avec ❤ par Lola Navarro 2025</p>
+          </section>
+
+          <!-- Navigation Section -->
+          <nav class="nav-section">
+            <h2 class="nav-title">Navigation</h2>
+            <div class="nav-links">
+              <a href="../index.html" style="color: inherit; text-decoration: none"
+                >Accueil</a
+              ><br />
+              <a href="#" style="color: inherit; text-decoration: none"
+                >Projets</a
+              ><br />
+              <a href="./contact.html" style="color: inherit; text-decoration: none"
+                >Contact</a
+              >
+            </div>
+          </nav>
+      </div>
+    </div>
+</footer>
+</body>
+</html>

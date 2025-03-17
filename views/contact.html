@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <title>Lola - Portfolio</title>
 
-    <link rel="stylesheet" href="../assets/style.css">
-    <link rel="icon" type="image/png" href="../assets/images/butterfly.svg">
+    <link rel="stylesheet" href="../style/contact.css">
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="icon" type="image/png" href="../assets/images/icons/butterfly.svg">
+    <script>
+    const copyEmail = () => {
+        const email = document.getElementById("email");
+        email.classList.add("email-click");
+        setTimeout(() => {
+            email.classList.remove("email-click")
+        }, 200);
+        const emailText = document.getElementById("emailText").textContent;
+        navigator.clipboard.writeText(emailText).then(() => {
+        }).catch(err => {
+        console.error("Failed to copy email: ", err);
+        });
+    }
+    </script>
 </head>
 <body>
     <section class="main-content">
     <header>
-        <img src="../assets/images/butterfly.svg" alt>
+        <img src="../assets/images/icons/butterfly.svg" alt>
 
         <nav>
             <ul>
@@ -22,61 +37,70 @@
     </header>
 
     <main>
-        <div id="contact">
-            <img src="../assets/images/moi.svg" alt="Moi"/>
-            
-            <div class="left-infos">
-                <h2 class="contactme">Me contacter</h2>
-
-                <p>N’hésitez pas à me contacter, je suis à votre disposition pour échanger avec vous !</p>
-                <p>Je suis activement <b>à la recherche d’une alternance</b> à partir de <b>Septembre</b> et pour une durée de <b>2 an</b> dans le domaine de l’<b>UX-UI Design</b> pour effectuer mon Master.</p>
-
-                <div class="basic-infos">
-                    <div class="home-infos">
-                        <img src="../assets/images/home.svg" alt="Lieu"/>
-                        <p>Lannion, Côtes d’Armor   |   Nîmes, Gard</p>
-                    </div>
-                    
-                    <div class="mail-infos">
-                        <img src="../assets/images/email.svg" alt="Mon email"/>
-                        <p>lola.navarro@etudiant.univ-rennes.fr</p>
-                    </div>
+            <img id="bc_contact" src="../assets/images/backgrounds/butterfly_bc.png">
+            <div class="title">
+                <h2>Me contacter</h2>
+            <p>N’hésitez pas à me contacter, je suis à votre disposition pour échanger avec vous !</p>
+            </div>
+            <div class="links">
+                <div class="icon1">
+                    <a onclick="copyEmail()">
+                        <div class="email-contact-container">
+                            <div class="email-contact-wrapper"  id="email">
+                              <p id="emailText" class="email-address">contact@lolanavarro.fr</p>
+                              <img src="../assets/images/icons/copy.svg" class="email-icon" alt="Email icon">
+                            </div>
+                          </div>  
+                    </a>                
+                    <a href="https://github.com/Lola0810" target="_blank" class="linksRS"><img src="../assets/images/icons/github_rose.svg" alt="Mon Github"></a>
+                    <a href="https://www.linkedin.com/in/lola-navarro/" target="_blank" class="linksRS"><img src="../assets/images/icons/linkedin_rose.svg" alt="Mon LinkedIn"></a>
+                    <a href="https://www.bento.me/lola" target="_blank" class="linksRS"><img src="../assets/images/icons/bentome_rose.svg" alt="Mon bento me"></a>
                 </div>
-
-                <div class="links">
+                <div class="icon2">
                     <div class="secondary-button">
-                        <a href="../assets/images/Lola_Navarro_WebDesign_CV.pdf" class="link-button" target="_blank">
+                        <a href="../assets/pdf/LolaNAVARROCV.pdf" class="link-button" target="_blank">
                             <span class="button-text">Mon CV</span>
-                            <span class="button-icon"><img src="../assets/images/download-icon.svg"/></span>
+                            <span class="button-icon"><img src="../assets/images/icons/download-icon.svg"/></span>
                         </a>
                     </div>
                     <div class="secondary-button">
-                        <a href="https://www.canva.com/design/DAF4v1audBw/pnIEMRp4sh6kSsLn5gXwcA/view?utm_content=DAF4v1audBw&utm_campaign=designshare&utm_medium=link&utm_source=editor" class="link-button" target="_blank">
+                        <a href="../assets/pdf/LolaNAVARROBK.pdf" class="link-button" target="_blank">
                             <span class="button-text">Mon Book</span>
-                            <span class="button-icon"><img src="../assets/images/book-icon.svg" alt="Book"/></span>
+                            <span class="button-icon"><img src="../assets/images/icons/book-icon.svg" alt="Book"/></span>
                         </a>
                     </div>
-                    
-                    <a href="https://github.com/Lola0810" target="_blank"><img src="../assets/images/github_rose.svg" alt="Mon Github"></a>
-                    <a href="https://www.linkedin.com/in/lola-navarro/" target="_blank"><img src="../assets/images/linkedin_rose.svg" alt="Mon LinkedIn"></a>
-                    <a href="htps://www.bento.me/lola" target="_blank"><img src="../assets/images/bentome_rose.svg" alt="Mon bento me"></a>
-                    
                 </div>
             </div>
-        </div>
+            <div class="announcement-card contact-card">
+                <div class="card-container">
+                    <div class="card-header">
+                        <img src="../assets/images/icons/dingdong.png"
+                            class="profile-image" alt="Profile image" />
+                        <div class="announcement-title">Annonce - Recherche d'Alternance</div>
+                    </div>
+                    <div class="announcement-description">
+                        Je suis à la recherche d'une alternance pour mes deux ans de master à
+                        Nantes ou en Bretagne !
+                    </div>
+                    <div class="domain-info">
+                        <span class="domain-label">Domaine :</span> UX-UI Design, Design de
+                        service
+                    </div>
+                </div>
+            </div>
     </main>
     </section>
-    <footer>
-        <span>Contact : lola.navarro@etudiant.univ-rennes.fr</span>
-
-        <span>&copy; Lola Navarro 2024</span>
-        
-        <nav>
-            <a id="lien_github" href="https://github.com/Lola0810"><img src="../assets/images/github.svg" alt="Clique ici pour voir mon github"></a>
-            <a id="len_linkedIn" href="https://www.linkedin.com/in/lola-navarro/"><img src="../assets/images/linkedin.svg" alt="Clique ici pour voir mon linkedin"></a>            
-        </nav>
-    </footer>
-
+    <footer class="footer contact-footer">
+        <img id="moi" src="../assets/images/backgrounds/moi.svg" alt="Moi"/>  
+        <div class="footer-container footer-container-ft">
+          <div class="footer-content contact-ft">
+            <!-- CTA Section -->
+            <section class="cta-section">
+              <p class="copyright copyright-ft">Site créé avec ❤ par Lola Navarro 2025</p>
+            </section>
+          </div>
+        </div>
+      </footer>
     <script src="../assets/js/projects.js"></script>
     <script src="../assets/js/projectView.js"></script>
 </body>

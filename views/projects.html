@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <title>Lola - Portfolio</title>
 
-    <link rel="stylesheet" href="../assets/style.css">
-    <link rel="icon" type="image/png" href="../assets/images/butterfly.svg">
+    <link rel="stylesheet" href="../style/projects.css">
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="icon" type="image/png" href="../assets/images/icons/butterfly.svg">
+    <script>
+      const copyEmail = () => {
+          const emailText = document.getElementById("emailText").textContent;
+          navigator.clipboard.writeText(emailText).then(() => {
+          }).catch(err => {
+          console.error("Failed to copy email: ", err);
+          });
+      }
+      </script>
 </head>
 <body>
     <section class="main-content">
     <header>
-        <img src="../assets/images/butterfly.svg" alt>
+        <img src="../assets/images/icons/butterfly.svg" alt>
         
         <nav>
             <ul>
@@ -22,8 +32,6 @@
     </header>
 
     <main>
-        <!-- Décoration à droite -->
-        <img class="ligne_vectorielle2" src="../src/img/ligne_vectorielle2.png" alt>
 
         <!----- Bloc pour les projets ----->
         
@@ -32,13 +40,20 @@
             <h2>Mes projets</h2>
 
             <div class="filter-buttons">
-                <button class="active" onclick="filterProjects('all')">Tous</button>
-                <button onclick="filterProjects('web')">Web</button>
-                <button onclick="filterProjects('affiches')">Affiches</button>
-                <button onclick="filterProjects('UX-UI')">UX/UI Design</button>
+                <a id="all" class="active" onclick="filterProjects('all')">Tous</a>
+                <a id="ux_ui_design" onclick="filterProjects('ux_ui_design')">UX-UI Design</a>
+                <a id="service_design" onclick="filterProjects('service_design')">Design de service</a>
+                <a id="graphic_design" onclick="filterProjects('graphic_design')">Design graphique</a>
+                <a id="web_dev" onclick="filterProjects('web_dev')">Développement web</a>
+                <a id="audiovisuel" onclick="filterProjects('audiovisuel')">Audiovisuel</a>
+                <a id="communication" onclick="filterProjects('communication')">Communication</a>
+                <a id="marketing" onclick="filterProjects('marketing')">Marketing</a>
+
             </div>
 
-            <div class="container_cards projects"></div>
+            <div class="container_cards projects">
+
+            </div>
                 
             <!-- Décoration à gauche -->
             
@@ -52,18 +67,80 @@
     </main>
     </section>
     
-    <footer>
-        <span>Contact : lola.navarro@etudiant.univ-rennes.fr</span>
 
-        <span>&copy; Lola Navarro 2024</span>
-        
-        <nav>
-            <a id="lien_github" href="https://github.com/Lola0810"><img src="../assets/images/github.svg" alt="Clique ici pour voir mon github"></a>
-            <a id="len_linkedIn" href="https://www.linkedin.com/in/lola-navarro/"><img src="../assets/images/linkedin.svg" alt="Clique ici pour voir mon linkedin"></a>            
-        </nav>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <!-- Contact Section -->
+            <section class="contact-section">
+              <p class="quick-response">Et en plus je réponds vite !</p>
+              <a class="email-container" id="emailText" onclick="copyEmail()">
+                <span class="email-text">contact@lolanavarro.fr</span>
+                <img
+                  src="../assets/images/icons/copy-white.svg"
+                  alt="Email icon"
+                  class="email-icon"
+                />
+              </a>
+              <div class="friendly-message">
+                <img
+                  src="../assets/images/icons/arrow.svg"
+                  alt="Message icon"
+                  class="message-icon"
+                />
+                <p class="message-text">Aller je ne mords peut-être pas ;)</p>
+              </div>
+            </section>
+  
+            <!-- CTA Section -->
+            <section class="cta-section">
+              <h2 class="cta-question">Je vous ai convaincu ?</h2>
+              <p class="cta-action">C'est parti !</p>
+              <div class="social-icons">
+                  <a href="../assets/pdf/LolaNAVARROCV.pdf" aria-label="Social media link">
+                      <img src="assets/images/icons/cv_footer_button.svg" alt="Social media icon"
+                          class="social-icon" />
+                  </a>
+                  <a href="../assets/pdf/LolaNAVARROBK.pdf" aria-label="Social media link">
+                      <img src="assets/images/icons/book_footer_button.svg" alt="Social media icon"
+                          class="social-icon" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/lola-navarro/" aria-label="Social media link">
+                      <img src="assets/images/icons/linkedin_footer_button.svg" alt="Social media icon"
+                          class="social-icon" />
+                  </a>
+                  <a href="https://github.com/Lola0810" aria-label="Social media link">
+                      <img src="assets/images/icons/github_footer_button.svg" alt="Social media icon"
+                          class="social-icon" />
+                  </a>
+                  <a href="https://bento.me/lola" aria-label="Social media link">
+                      <img src="assets/images/icons/bento_footer_button.svg" alt="Social media icon"
+                          class="social-icon" />
+                  </a>
+              </div>
+              <p class="copyright">Site créé avec ❤ par Lola Navarro 2025</p>
+          </section>
+  
+            <!-- Navigation Section -->
+            <nav class="nav-section">
+              <h2 class="nav-title">Navigation</h2>
+              <div class="nav-links">
+                <a href="../index.html" style="color: inherit; text-decoration: none"
+                  >Accueil</a
+                ><br />
+                <a href="#" style="color: inherit; text-decoration: none"
+                  >Projets</a
+                ><br />
+                <a href="./contact.html" style="color: inherit; text-decoration: none"
+                  >Contact</a
+                >
+              </div>
+            </nav>
+          </div>
+        </div>
     </footer>
 
-    <script src="../assets/js/projects.js"></script>
-    <script src="../assets/js/projectView.js"></script>
+    <script src="../assets/js/projectsData.js"></script>
+    <script src="../assets/js/projectRenderer.js"></script>
 </body>
 </html>

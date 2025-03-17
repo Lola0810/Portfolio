@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lola - Portfolio</title>
+
+    <link rel="stylesheet" href="../../style/project.css">
+    <link rel="stylesheet" href="../../style/common.css">
+    <link rel="icon" type="image/png" href="../../assets/images/icons/butterfly.svg">
+    <script>
+      const copyEmail = () => {
+          const emailText = document.getElementById("emailText").textContent;
+          navigator.clipboard.writeText(emailText).then(() => {
+          }).catch(err => {
+          console.error("Failed to copy email: ", err);
+          });
+      }
+      </script>
+</head>
+<body>
+  <section class="main-content">
+    <header>
+      <img src="../../assets/images/icons/butterfly.svg" alt>
+
+      <nav>
+          <ul>
+              <li><a href="../../index.html">Accueil</a></li>
+              <li><a href="../projects.html">Projets</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="container">
+        <div class="project-header">
+          <a href="../projects.html"><button>RETOUR</button></a>
+
+          <h1 class="project-title">Blibliothèque U, observation des usages</h1>
+          <p class="subtitle">Projet Universitaire | Design d’expérience - Septembre 2023</p>
+        </div>
+    
+        <nav class="category-buttons">
+          <div class="category-button">Développement web</div>
+          <div class="category-button">Design de service</div>
+          <div class="category-button">UX/UI Design</div>
+        </nav>
+    
+        <div class="project-showcase">
+          <img src="../../assets/images/projects/bibliotheque-u/banner.png" class="project-image">
+        </div>
+
+        <section class="sub-container">
+          <section class="context-section">
+            <h2 class="context-heading">Contexte</h2>
+            <p class="context-text">
+              Pour mon tout premier projet en UX, nous avons travaillé en binôme sur l’analyse des usages et des usagers de la bibliothèque universitaire de mon IUT. L’objectif était d’identifier les freins et difficultés rencontrés dans différents cas d’utilisation, comme l’emprunt d’un livre ou l’utilisation d’un ordinateur. <br/>
+              Au fil de notre étude, nous avons mis en évidence les contraintes liées au processus d’emprunt et avons imaginé une solution numérique sous forme d’application permettant d’automatiser cette étape sans passer par la secrétaire. Ce projet était entièrement axé sur l’analyse UX, sans phase de conception de l’application.
+            </p>
+          </section>
+  
+          <section class="mission-section">
+            <div class="mission-container">
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Initialisation</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Identification de l’utilisateur de ce service et analyse de ses habitudes</span></li>
+                    <li><span class="highlight">Analyse de l’usage existant</span> <br/>
+                      Réflexion sur les différents cas d’usage et analyse des ces parcours</li>
+                    <li><span class="highlight">Identification des pain points</span> <br/>
+                      Analyse des obstacles et difficultés rencontrés, suivie du choix d’un frein prioritaire à améliorer en fonction de son impact et de son utilité</li>
+                  </ul>
+                </div>
+              </article>
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/bibliotheque-u/illu1.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="mission-section">
+            <div class="mission-container">
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/bibliotheque-u/illu2.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Idéation</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Problématique design</span> <br/>
+                      Mise en lumière du problème actuel et de son impact sur l’expérience utilisateur</li>
+                    <li><span class="highlight">Recherches et innovation</span> <br/>
+                      Analyse de l’existant et élaboration d’un service innovant répondant aux besoins identifiés</li>
+                    <li><span class="highlight">Conception d’un scénario d’usage</span> <br/>
+                      Définition d’un parcours utilisateur illustrant l’interaction avec le service proposé (dessiné)</li>
+          
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="competences-container">
+            <img src="../../assets//images/icons/butterflyIcon.svg" alt="Butterfly icon" class="butterfly-icon">
+            <h2 class="competences-title">Compétences mobilisées</h2>
+          
+            <div class="skills-container">
+              <span class="skill-pill">Recherche documentaire</span>
+              <span class="skill-pill">Analyse des besoins</span>
+              <span class="skill-pill">Conception d'interface</span>
+            </div>
+          
+            <div class="tools-container">
+              <img class="tool-icon" src="../../assets/images/icons/figma.png"/>
+              <img class="tool-icon" src="../../assets/images/icons/excel.svg"/>
+              <img class="tool-icon" src="../../assets/images/icons/ps.svg"/>
+            </div>
+          
+            <p class="competences-description">
+              Ce projet m’a permis de prendre conscience de l’importance de se mettre à la place de l’utilisateur pour analyser l’usage d’une solution et identifier les problèmes rencontrés. <br/>
+              Il a également réveillé mon envie d’innover et de concevoir des solutions adaptées aux besoins réels. <br/>
+              C’est à partir de ce moment-là que j’ai pu donner une véritable direction à mon projet professionnel.
+            </p>
+          </section>
+
+        </section>
+
+        <section class="note-container">
+          <div class="content-wrapper">
+            <div class="image-column">
+              <img
+                src="../../assets/images/projects/bibliotheque-u/illu3.png"
+                alt="Feature image"
+                class="feature-image"
+              />
+            </div>
+            <div class="text-column">
+              <div class="text-content">
+                <span class="context-heading">Résultat</span>
+                <p class="note-description">
+                  <a href="../../assets/pdf/Bibliothèque-Universitaire.pdf">Diaporama du projet</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <p class="quick-response">Et en plus je réponds vite !</p>
+            <a id="emailText" class="email-container" onclick="copyEmail()">
+              <span class="email-text">contact@lolanavarro.fr</span>
+              <img
+                src="../../assets/images/icons/copy-white.svg"
+                alt="Email icon"
+                class="email-icon"
+              />
+            </a>
+            <div class="friendly-message">
+              <img
+                src="../../assets/images/icons/arrow.svg"
+                alt="Message icon"
+                class="message-icon"
+              />
+              <p class="message-text">Aller je ne mords peut-être pas ;)</p>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="cta-section">
+            <h2 class="cta-question">Je vous ai convaincu ?</h2>
+            <p class="cta-action">C'est parti !</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/cv_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/book_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/linkedin_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                    src="../../assets/images/icons/github_footer_button.svg"
+                    alt="Social media icon"
+                    class="social-icon"
+                  />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                      src="../../assets/images/icons/bento_footer_button.svg"
+                      alt="Social media icon"
+                      class="social-icon"
+                  />
+              </a>
+            </div>
+            <p class="copyright">Site créé avec ❤ par Lola Navarro 2025</p>
+          </section>
+
+          <!-- Navigation Section -->
+          <nav class="nav-section">
+            <h2 class="nav-title">Navigation</h2>
+            <div class="nav-links">
+              <a href="../index.html" style="color: inherit; text-decoration: none"
+                >Accueil</a
+              ><br />
+              <a href="#" style="color: inherit; text-decoration: none"
+                >Projets</a
+              ><br />
+              <a href="./contact.html" style="color: inherit; text-decoration: none"
+                >Contact</a
+              >
+            </div>
+          </nav>
+      </div>
+    </div>
+</footer>
+</body>
+</html>

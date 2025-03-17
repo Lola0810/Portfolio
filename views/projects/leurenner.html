@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lola - Portfolio</title>
+
+    <link rel="stylesheet" href="../../style/project.css">
+    <link rel="stylesheet" href="../../style/common.css">
+    <link rel="icon" type="image/png" href="../../assets/images/icons/butterfly.svg">
+    <script>
+      const copyEmail = () => {
+          const emailText = document.getElementById("emailText").textContent;
+          navigator.clipboard.writeText(emailText).then(() => {
+          }).catch(err => {
+          console.error("Failed to copy email: ", err);
+          });
+      }
+      </script>
+</head>
+<body>
+  <section class="main-content">
+    <header>
+      <img src="../../assets/images/icons/butterfly.svg" alt>
+
+      <nav>
+          <ul>
+              <li><a href="../../index.html">Accueil</a></li>
+              <li><a href="../projects.html">Projets</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="container">
+        <div class="project-header">
+          <a href="../projects.html"><button>RETOUR</button></a>
+
+          <h1 class="project-title">Leurenner, Réservation de spectacles</h1>
+          <p class="subtitle">Projet Universitaire | Design interactif - 2023</p>
+        </div>
+    
+        <nav class="category-buttons">
+          <div class="category-button">UX/UI Design</div>
+          <div class="category-button">Design de service</div>
+        </nav>
+    
+        <div class="project-showcase">
+          <img src="../../assets/images/projects/leurenner/banner.png" alt="Leurenner Réservation de spectacle Projet" class="project-image">
+        </div>
+
+        <section class="sub-container">
+          <section class="context-section">
+            <h2 class="context-heading">Contexte</h2>
+            <p class="context-text">
+              Dans le cadre d’un projet universitaire en 2ème année de MMI et en équipe, l’objectif était de concevoir une solution numérique facilitant la réservation de spectacles dans les cinq salles du Trégor. <br/>
+              Elle offre aux utilisateurs une interface intuitive et accessible, leur permettant de consulter les programmations, de sélectionner des spectacles et de réserver leurs places en quelques clics. L'application met l'accent sur l'accessibilité et la navigabilité, pour assurer une expérience utilisateur fluide et agréable.
+            </p>
+          </section>
+  
+          <section class="mission-section">
+            <div class="mission-container">
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Initialisation</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Etude de l’existant</span> <br/>
+                      Etude de la cible, analyse des applications concurrentes, veille UI.</li>
+                    <li><span class="highlight">Création d’une charte visuelle</span> <br/>
+                      Univers, Storytelling, Typographie, Logo, Couleurs</li>
+          
+                  </ul>
+                </div>
+              </article>
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/leurenner/identity.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="mission-section">
+            <div class="mission-container">
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/leurenner/wireframe-maquette.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Conception</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Conception d’un wireflow et de l’architecture des pages
+                    </span> <br/>
+                    Structure de l’information des différentes pages et fonctionnalités (Wireframe), architecture des pages de l’application (Flow), expérience utilisateur.</li>
+                    <li><span class="highlight">Création d’une maquette mettant en avant l’accessibilité et la navigabilité</span> <br/>
+                      Kit UI, Interface en mobile first, Accessibilité, design d’interface</li>
+          
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="competences-container">
+            <img src="../../assets//images/icons/butterflyIcon.svg" alt="Butterfly icon" class="butterfly-icon">
+            <h2 class="competences-title">Compétences mobilisées</h2>
+          
+            <div class="skills-container">
+              <span class="skill-pill">Créativité</span>
+              <span class="skill-pill">Réflexion graphique</span>
+              <span class="skill-pill">Innovation</span>
+            </div>
+          
+            <div class="tools-container">
+              <img class="tool-icon" src="../../assets/images/icons/figma.png"/>
+              <img class="tool-icon" src="../../assets/images/icons/ps.svg"/>
+              <img class="tool-icon" src="../../assets/images/icons/XD.png"/>
+            </div>
+          
+            <p class="competences-description">
+              Ce projet a été très enrichissant. Il m'a permis de développer des compétences en analyse de l’existant, en idéation et en représentation systémique pour proposer des solutions adaptées aux enjeux environnementaux et de santé. 
+            </p>
+          </section>
+
+          <section class="note-container">
+            <div class="content-wrapper">
+              <div class="image-column">
+                <img
+                  src="../../assets/images/projects/leurenner/result.png"
+                  alt="Feature image"
+                  class="feature-image"
+                />
+              </div>
+              <div class="text-column">
+                <div class="text-content">
+                  <span class="context-heading">Résultat</span>
+                  <p class="note-description">
+                    Grâce à ce projet , j'ai gagné le 1er prix UI-UX au festival À l'West Fest 2024 organisé par l'IUT de Lannion.
+                    <br />
+                    <a href="https://www.linkedin.com/in/lola-navarro/details/projects/1635547954989/single-media-viewer/?profileId=ACoAAD7obhkBRYUNrlgADEUOJvoGPAKyBMyMk8A">Présentation du projet</a>
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=WNuuAjJ8SR0">Festival À l'West Fest 2024</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+    </main>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <p class="quick-response">Et en plus je réponds vite !</p>
+            <a id="emailText" class="email-container" onclick="copyEmail()">
+              <span class="email-text">contact@lolanavarro.fr</span>
+              <img
+                src="../../assets/images/icons/copy-white.svg"
+                alt="Email icon"
+                class="email-icon"
+              />
+            </a>
+            <div class="friendly-message">
+              <img
+                src="../../assets/images/icons/arrow.svg"
+                alt="Message icon"
+                class="message-icon"
+              />
+              <p class="message-text">Aller je ne mords peut-être pas ;)</p>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="cta-section">
+            <h2 class="cta-question">Je vous ai convaincu ?</h2>
+            <p class="cta-action">C'est parti !</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/cv_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/book_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/linkedin_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                    src="../../assets/images/icons/github_footer_button.svg"
+                    alt="Social media icon"
+                    class="social-icon"
+                  />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                      src="../../assets/images/icons/bento_footer_button.svg"
+                      alt="Social media icon"
+                      class="social-icon"
+                  />
+              </a>
+            </div>
+            <p class="copyright">Site créé avec ❤ par Lola Navarro 2025</p>
+          </section>
+
+          <!-- Navigation Section -->
+          <nav class="nav-section">
+            <h2 class="nav-title">Navigation</h2>
+            <div class="nav-links">
+              <a href="../index.html" style="color: inherit; text-decoration: none"
+                >Accueil</a
+              ><br />
+              <a href="#" style="color: inherit; text-decoration: none"
+                >Projets</a
+              ><br />
+              <a href="./contact.html" style="color: inherit; text-decoration: none"
+                >Contact</a
+              >
+            </div>
+          </nav>
+      </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,6 +1,3 @@
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
-
 const items = Array.from(document.querySelectorAll(".carousel-item"));
 let currentIndex = 0;
 
@@ -50,9 +47,46 @@ function previousSlide(lockAutomaticSwitch) {
   updateCarousel(lockAutomaticSwitch);
 }
 
-prevBtn.onclick = () => previousSlide(true);
-nextBtn.onclick = () => nextSlide(true);
+const listenForCardClick = () => {
+  const container = document.getElementById("abilities-component");
+  container.addEventListener("click", (event) => {
+      let target = event.target.closest(".abilitie-item");
+      if (!target) return;
+
+      let contentTarget = target.querySelector(".abilitie-content");
+
+      const items = container.querySelectorAll(".abilitie-item");
+      const images = container.querySelectorAll(".abilitie-image");
+      const content = container.querySelectorAll(".abilitie-content");
+      if (!target.classList.contains("selected")) {
+          items.forEach(item => {
+              item.classList.remove("selected");
+              item.classList.remove("hover");
+          });
+
+          content.forEach(item => {
+              item.classList.remove("active");
+          });
+
+          target.classList.add("selected");
+          target.classList.add("hover");
+          contentTarget.classList.add("active");
+          let id = target.dataset.id;
+
+          images.forEach(img => {
+              img.classList.remove("active");
+              if (img.dataset.id === id) img.classList.add("active");
+          });
+      }
+  });
+}
+
+const redirectToProjectWithTag = (tag) => {
+  window.location.href = `./views/projects.html?tag=${tag}`;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   startCarousel();
   updateCarousel();
+  listenForCardClick();
 });

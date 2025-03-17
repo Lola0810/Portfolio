@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lola - Portfolio</title>
+
+    <link rel="stylesheet" href="../../style/project.css">
+    <link rel="stylesheet" href="../../style/common.css">
+    <link rel="icon" type="image/png" href="../../assets/images/icons/butterfly.svg">
+    <script>
+      const copyEmail = () => {
+          const emailText = document.getElementById("emailText").textContent;
+          navigator.clipboard.writeText(emailText).then(() => {
+          }).catch(err => {
+          console.error("Failed to copy email: ", err);
+          });
+      }
+      </script>
+</head>
+<body>
+  <section class="main-content">
+    <header>
+      <img src="../../assets/images/icons/butterfly.svg" alt>
+
+      <nav>
+          <ul>
+              <li><a href="../../index.html">Accueil</a></li>
+              <li><a href="../projects.html">Projets</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="container">
+        <div class="project-header">
+          <a href="../projects.html"><button>RETOUR</button></a>
+
+          <h1 class="project-title">Dicathlon, réservation de matériel</h1>
+          <p class="subtitle">Projet Universitaire | Développement web - Octobre 2023</p>
+        </div>
+    
+        <nav class="category-buttons">
+          <div class="category-button">Développement web</div>
+          <div class="category-button">UX/UI Design</div>
+        </nav>
+    
+        <div class="project-showcase">
+          <img src="../../assets/images/projects/dicathlon/banner.png" alt="Leurenner Réservation de spectacle Projet" class="project-image">
+        </div>
+
+        <section class="sub-container">
+          <section class="context-section">
+            <h2 class="context-heading">Contexte</h2>
+            <p class="context-text">
+              Dans le cadre d’un projet universitaire, nous avons conçu un site internet from scratch en nous basant sur un persona défini. L’objectif était de répondre aux besoins d’une personne âgée souhaitant louer du matériel sportif facilement, malgré son peu d’affinité avec Internet. <br/>
+              Mon rôle dans ce projet était de penser l’expérience utilisateur en rendant l’interface intuitive et accessible, avec un parcours simplifié et adapté aux usages des seniors. J’ai également travaillé sur l’identité visuelle et la conception UI, afin de garantir une navigation fluide et rassurante. <br/>
+              J’ai développement essentiellement la partie backend du projet.
+            </p>
+          </section>
+  
+          <section class="mission-section">
+            <div class="mission-container">
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Initialisation</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Etude de l'existant</span> <br/>
+                      Sites concurrents, interface et architecture du header, ..</li>
+                    <li><span class="highlight">Moodboard</span> <br/>
+                      Création d'une planche tendance en rapport avec un persona présenté au client fictif</li>
+                    <li><span class="highlight">Identité graphique</span> <br/>
+                      Création d'une charte graphique en accord avec le secteur : logo, typographie, couleur, favicon, ...</li>
+          
+                  </ul>
+                </div>
+              </article>
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/dicathlon/illu1.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="mission-section">
+            <div class="mission-container">
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/dicathlon/illu2.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Conception & Développement</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Conception d’un wireflow et de l’architecture des pages
+                    </span> <br/>
+                    Structure de l’information des différentes pages et fonctionnalités (Wireframe), architecture des pages (Flow)</li>
+                    <li><span class="highlight">Conception d’une maquette dynamique</span> <br/>
+                      Responsive et répondant aux attentes de l’utilisateur cible</li>
+                    <li><span class="highlight">Développement web</span> <br/>
+                      Front end en HTML, CSS et JS et BackEnd avec le framework Code Igniter (PHP)</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="competences-container">
+            <img src="../../assets//images/icons/butterflyIcon.svg" alt="Butterfly icon" class="butterfly-icon">
+            <h2 class="competences-title">Compétences mobilisées</h2>
+          
+            <div class="skills-container">
+              <span class="skill-pill">Persévérance</span>
+              <span class="skill-pill">Travail d’équipe</span>
+              <span class="skill-pill">Réactivité</span>
+            </div>
+          
+            <div class="tools-container">
+              <img class="tool-icon" src="../../assets/images/icons/HTML.png"/>
+              <img class="tool-icon" src="../../assets/images/icons/CSS.png"/>
+              <img class="tool-icon" src="../../assets/images/icons/PHP.png"/>
+              <img class="tool-icon" src="../../assets/images/icons/figma.png"/>
+              <img class="tool-icon" src="../../assets/images/icons/javascript.svg"/>
+            </div>
+          
+            <p class="competences-description">
+              Ce projet a été très enrichissant du point de vue veille technologique car il m’a permis de découvrir un framework PHP : Code Igniter. J’ai appris à développer dans un environnement cadré dans laquelle la compréhension de la structure détermine le fonctionnement du projet et du développement des fonctionnalités. <br/>
+              Il m’a également aidé à mieux appréhender la conception d’une base de données et son interaction avec un site web fonctionnel.
+            </p>
+          </section>
+
+          <section class="note-container">
+            <div class="content-wrapper">
+              <div class="image-column">
+                <img
+                  src="../../assets/images/projects/dicathlon/illu3.png"
+                  alt="Feature image"
+                  class="feature-image"
+                />
+              </div>
+              <div class="text-column">
+                <div class="text-content">
+                  <span class="context-heading">Résultat</span>
+                  <p class="note-description">
+                    Le projet est disponible sur mon Github en public !
+                    <br />
+                    <a href="https://github.com/Lola0810/Dicathlon-Website">Projet GitHub</a>
+                    <br />
+                    <a href="../../assets/pdf/Dicathlon-Présentation.pdf">Présentation du site internet</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+    </main>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <p class="quick-response">Et en plus je réponds vite !</p>
+            <a id="emailText" class="email-container" onclick="copyEmail()">
+              <span class="email-text">contact@lolanavarro.fr</span>
+              <img
+                src="../../assets/images/icons/copy-white.svg"
+                alt="Email icon"
+                class="email-icon"
+              />
+            </a>
+            <div class="friendly-message">
+              <img
+                src="../../assets/images/icons/arrow.svg"
+                alt="Message icon"
+                class="message-icon"
+              />
+              <p class="message-text">Aller je ne mords peut-être pas ;)</p>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="cta-section">
+            <h2 class="cta-question">Je vous ai convaincu ?</h2>
+            <p class="cta-action">C'est parti !</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/cv_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/book_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/linkedin_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                    src="../../assets/images/icons/github_footer_button.svg"
+                    alt="Social media icon"
+                    class="social-icon"
+                  />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                      src="../../assets/images/icons/bento_footer_button.svg"
+                      alt="Social media icon"
+                      class="social-icon"
+                  />
+              </a>
+            </div>
+            <p class="copyright">Site créé avec ❤ par Lola Navarro 2025</p>
+          </section>
+
+          <!-- Navigation Section -->
+          <nav class="nav-section">
+            <h2 class="nav-title">Navigation</h2>
+            <div class="nav-links">
+              <a href="../index.html" style="color: inherit; text-decoration: none"
+                >Accueil</a
+              ><br />
+              <a href="#" style="color: inherit; text-decoration: none"
+                >Projets</a
+              ><br />
+              <a href="./contact.html" style="color: inherit; text-decoration: none"
+                >Contact</a
+              >
+            </div>
+          </nav>
+      </div>
+    </div>
+</footer>
+</body>
+</html>

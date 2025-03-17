@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lola - Portfolio</title>
+
+    <link rel="stylesheet" href="../../style/project.css">
+    <link rel="stylesheet" href="../../style/common.css">
+    <link rel="icon" type="image/png" href="../../assets/images/icons/butterfly.svg">
+    <script>
+      const copyEmail = () => {
+          const emailText = document.getElementById("emailText").textContent;
+          navigator.clipboard.writeText(emailText).then(() => {
+          }).catch(err => {
+          console.error("Failed to copy email: ", err);
+          });
+      }
+      </script>
+</head>
+<body>
+  <section class="main-content">
+    <header>
+      <img src="../../assets/images/icons/butterfly.svg" alt>
+
+      <nav>
+          <ul>
+              <li><a href="../../index.html">Accueil</a></li>
+              <li><a href="../projects.html">Projets</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="container">
+        <div class="project-header">
+          <a href="../projects.html"><button>RETOUR</button></a>
+
+          <h1 class="project-title">Onfido, Identity Wallet</h1>
+          <p class="subtitle">Projet Universitaire | Design d'expérience - 2024</p>
+        </div>
+    
+        <nav class="category-buttons">
+          <div class="category-button">Design de service</div>
+          <div class="category-button">UX/UI Design</div>
+          <div class="category-button">Audiovisuel</div>
+        </nav>
+    
+        <div class="project-showcase">
+          <img src="../../assets/images/projects/fingercard/banner.png" class="project-image">
+        </div>
+        
+
+        <section class="sub-container">
+          <section class="context-section">
+            <h2 class="context-heading">Contexte</h2>
+            <p class="context-text">
+                Dans le cadre d’un design sprint et en équipe de 4, j’ai travaillé sur l’élaboration d’un portefeuille numérique hybride, en utilisant des technologies existantes ou émergentes. 
+                Ce projet a été mené entièrement en anglais avec la collaboration des designers d’Onfido, une entreprise spécialisée dans l'identification et la vérification d’identité en ligne.
+                <br/>
+                Nous avons conçu Finger Card, un portefeuille numérique hybride combinant une carte électronique à empreinte digitale et une application mobile, offrant une sécurité renforcée des données utilisateur.                
+            </p>
+          </section>
+  
+          <section class="mission-section">
+            <div class="mission-container">
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Démarche projet</h2>
+                  <p class="context-text">
+                    Projet effectué en <span class="highlight">design thinking avec la méthode du double diamant</span> <br/>
+                    Dans ce projet j’ai géré mon équipe entièrement en anglais. Je m’occupais essentiellement des recherches autour de l'existant et des technologies pour trouver des opportunités, mais également et plus particulièrement de la maquette.
+                  </p>
+                </div>
+              </article>
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/fingercard/deroule.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+            </div>
+          </section>
+          
+
+          <section class="mission-section">
+            <div class="mission-container">
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/fingercard/illu1.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Initialisation</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Réunion de lancement en anglais</span></li>
+                    <li><span class="highlight">Recherches documentaires</span> <br/>
+                      Analyse de l’entreprise, du sujet et de l’environnement technologique.</li>
+                    <li><span class="highlight">Cartographie des opportunités</span> <br/>
+                    Idéation de trois solutions et formalisation des parcours</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="mission-section">
+            <div class="mission-container">
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Conception</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Recherche creative</span> <br/>
+                        Recherche approfondie sur l'opportunité validée par le partenaire et création d'une identité de produit</li>
+                    <li><span class="highlight">Conception de la maquette</span> <br/>
+                      Kit UI, prototypage avec des flow adaptés aux Use Cases, animations des éléments</li>
+                  </ul>
+                </div>
+              </article>
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/fingercard/illu2.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="competences-container">
+            <img src="../../assets//images/icons/butterflyIcon.svg" alt="Butterfly icon" class="butterfly-icon">
+            <h2 class="competences-title">Compétences mobilisées</h2>
+          
+            <div class="skills-container">
+              <span class="skill-pill">Gestion de projet</span>
+              <span class="skill-pill">Recherche et innovation</span>
+              <span class="skill-pill">UX/UI design</span>
+            </div>
+          
+            <div class="tools-container">
+              <img class="tool-icon" src="../../assets/images/icons/figma.png"/>
+              <img class="tool-icon" src="../../assets/images/icons/pr.png"/>
+              <img class="tool-icon" src="../../assets/images/icons/notion.png"/>
+            </div>
+          
+            <p class="competences-description">
+              Ce projet m’a permis de gérer une équipe en anglais dans un design sprint, de mener des recherches sur les technologies émergentes et d’appliquer la méthodologie du double diamant.
+              <br/> 
+              La collaboration avec Onfido m’a aussi apporté une meilleure compréhension des enjeux de sécurité des données et d’identification numérique.
+            </p>
+          </section>
+
+          <section class="note-container">
+            <div class="content-wrapper">
+              <div class="image-column">
+                <img
+                  src="../../assets/images/projects/fingercard/illu3.jpg"
+                  alt="Feature image"
+                  class="feature-image"
+                />
+              </div>
+              <div class="text-column">
+                <div class="text-content">
+                  <span class="context-heading">Résultat</span>
+                  <p class="note-description">
+                    Nous avons été classé 3ème projet le plus innovant et intéressant, mais également la 2ème meilleure vidéo par notre partenaire.
+                    <br />
+                    <a href="https://www.linkedin.com/in/lola-navarro/details/projects/1166292476/multiple-media-viewer/?profileId=ACoAAD7obhkBRYUNrlgADEUOJvoGPAKyBMyMk8A&treasuryMediaId=1736333080858">Etude et analyse</a>
+                    <br />
+                    <a href="https://www.linkedin.com/in/lola-navarro/details/projects/1166292476/multiple-media-viewer/?profileId=ACoAAD7obhkBRYUNrlgADEUOJvoGPAKyBMyMk8A&treasuryMediaId=1736333080859">Proposition FingerCard</a>
+                    <br />
+                    <a href="https://drive.google.com/file/d/1NqzfiZHZZ0e7dT-1ZPChbqYWBhNLC8xU/view?usp=sharing">Vidéo de présentation</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+    </main>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <p class="quick-response">Et en plus je réponds vite !</p>
+            <a id="emailText" class="email-container" onclick="copyEmail()">
+              <span class="email-text">contact@lolanavarro.fr</span>
+              <img
+                src="../../assets/images/icons/copy-white.svg"
+                alt="Email icon"
+                class="email-icon"
+              />
+            </a>
+            <div class="friendly-message">
+              <img
+                src="../../assets/images/icons/arrow.svg"
+                alt="Message icon"
+                class="message-icon"
+              />
+              <p class="message-text">Aller je ne mords peut-être pas ;)</p>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="cta-section">
+            <h2 class="cta-question">Je vous ai convaincu ?</h2>
+            <p class="cta-action">C'est parti !</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/cv_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/book_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/linkedin_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                    src="../../assets/images/icons/github_footer_button.svg"
+                    alt="Social media icon"
+                    class="social-icon"
+                  />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                      src="../../assets/images/icons/bento_footer_button.svg"
+                      alt="Social media icon"
+                      class="social-icon"
+                  />
+              </a>
+            </div>
+            <p class="copyright">Site créé avec ❤ par Lola Navarro 2025</p>
+          </section>
+
+          <!-- Navigation Section -->
+          <nav class="nav-section">
+            <h2 class="nav-title">Navigation</h2>
+            <div class="nav-links">
+              <a href="../index.html" style="color: inherit; text-decoration: none"
+                >Accueil</a
+              ><br />
+              <a href="#" style="color: inherit; text-decoration: none"
+                >Projets</a
+              ><br />
+              <a href="./contact.html" style="color: inherit; text-decoration: none"
+                >Contact</a
+              >
+            </div>
+          </nav>
+      </div>
+    </div>
+</footer>
+</body>
+</html>

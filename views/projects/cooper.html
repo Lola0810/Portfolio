@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lola - Portfolio</title>
+
+    <link rel="stylesheet" href="../../style/project.css">
+    <link rel="stylesheet" href="../../style/common.css">
+    <link rel="icon" type="image/png" href="../../assets/images/icons/butterfly.svg">
+    <script>
+      const copyEmail = () => {
+          const emailText = document.getElementById("emailText").textContent;
+          navigator.clipboard.writeText(emailText).then(() => {
+          }).catch(err => {
+          console.error("Failed to copy email: ", err);
+          });
+      }
+      </script>
+</head>
+<body>
+  <section class="main-content">
+    <header>
+      <img src="../../assets/images/icons/butterfly.svg" alt>
+
+      <nav>
+          <ul>
+              <li><a href="../../index.html">Accueil</a></li>
+              <li><a href="../projects.html">Projets</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="container">
+        <div class="project-header">
+          <a href="../projects.html"><button>RETOUR</button></a>
+
+          <h1 class="project-title">Cooper, Signalétique de tri</h1>
+          <p class="subtitle">Projet Universitaire | Stratégie de communication - 2025</p>
+        </div>
+    
+        <nav class="category-buttons">
+          <div class="category-button">Communication</div>
+          <div class="category-button">Design graphique</div>
+          <div class="category-button">Design de service</div>
+        </nav>
+    
+        <div class="project-showcase">
+          <img src="../../assets/images/projects/cooper/banner.png" alt="Leurenner Réservation de spectacle Projet" class="project-image">
+        </div>
+
+        <section class="sub-container">
+          <section class="context-section">
+            <h2 class="context-heading">Contexte</h2>
+            <p class="context-text">
+                Dans le cadre d’un projet commandité par le service logistique de l’IUT, nous avons repensé, en équipe, la signalétique des poubelles pour proposer des solutions innovantes facilitant le tri des déchets. <br/>
+Cooper, un raton-trieur, a été conçu pour accompagner les étudiants dans la recherche des différents points de tri au sein de l'IUT. Il sert à éduquer et rediriger les utilisateurs de manière ludique et efficace, tout en simplifiant l’expérience de tri sélectif.
+                
+            </p>
+          </section>
+  
+          <section class="mission-section">
+            <div class="mission-container">
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Initialisation</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Analyse de l'existant et des opportunités</span> <br/>
+                      Liées au makerspace <br/>(imprimante 3D, sticker, gravure, ...)</li>
+                    <li><span class="highlight">Atelier créatif et brainstorming des idées</span></li>
+                    <li><span class="highlight">Etude du parcours utilisateur</span> <br/>
+                    Sur l'utilisation des poubelles de tri</li>
+          
+                  </ul>
+                </div>
+              </article>
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/cooper/illu1.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="mission-section">
+            <div class="mission-container">
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/cooper/illu2.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Idéation & conception</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Conception approfondie du concept</span> <br/>
+                        La mascotte, ton & Valeurs, univers graphique, storytelling</li>
+                    <li><span class="highlight">Expérience utilisateur</span> <br/>
+                        Formalisation des scénarios utilisateur améliorés</li>
+                    <li><span class="highlight">Conception de visuels liés au concept</span><br/>
+                       Stickers, affiches, flyers affiche et plan de masse</li>
+                    <li><span class="highlight">Création d'un dossier technique</span></li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="competences-container">
+            <img src="../../assets//images/icons/butterflyIcon.svg" alt="Butterfly icon" class="butterfly-icon">
+            <h2 class="competences-title">Compétences mobilisées</h2>
+          
+            <div class="skills-container">
+              <span class="skill-pill">Illustration</span>
+              <span class="skill-pill">Réflexion utilisateur</span>
+              <span class="skill-pill">Pédagogie visuelle</span>
+            </div>
+          
+            <div class="tools-container">
+              <img class="tool-icon" src="../../assets/images/icons/figma.png"/>
+              <img class="tool-icon" src="../../assets/images/icons/ps.svg"/>
+              <img class="tool-icon" src="../../assets/images/icons/Ai.svg"/>
+              <img class="tool-icon" src="../../assets/images/icons/affinity.png"/>
+            </div>
+          
+            <p class="competences-description">
+              Ce projet m’a permis de développer ma réflexion sur la création d’un univers de communication cohérent (mascotte, storytelling, identité graphique) et de mieux comprendre l’importance des parcours utilisateurs et notamment la tolérance aux erreurs, en rendant le tri plus ludique et intuitif.
+            </p>
+          </section>
+
+          <section class="note-container">
+            <div class="content-wrapper">
+              <div class="image-column">
+                <img
+                  src="../../assets/images/projects/cooper/illu3.png"
+                  alt="Feature image"
+                  class="feature-image"
+                />
+              </div>
+              <div class="text-column">
+                <div class="text-content">
+                  <span class="context-heading">Résultat</span>
+                  <p class="note-description">
+                    Les visuels de ce projet ont étés imprimés au format sticker au MakerSpace de l'IUT et utilisé dans le cadre de mise en scène d'utilisation.
+                    <br />
+                    <a href="../../assets/pdf/Signalétique_Cooper.pdf">Diaporama du projet</a>
+                    <br />
+                    <a href="../../assets/pdf/Dossier-Signalétique.pdf">Dossier de présentation et côtes</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+    </main>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <p class="quick-response">Et en plus je réponds vite !</p>
+            <a id="emailText" class="email-container" onclick="copyEmail()">
+              <span class="email-text">contact@lolanavarro.fr</span>
+              <img
+                src="../../assets/images/icons/copy-white.svg"
+                alt="Email icon"
+                class="email-icon"
+              />
+            </a>
+            <div class="friendly-message">
+              <img
+                src="../../assets/images/icons/arrow.svg"
+                alt="Message icon"
+                class="message-icon"
+              />
+              <p class="message-text">Aller je ne mords peut-être pas ;)</p>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="cta-section">
+            <h2 class="cta-question">Je vous ai convaincu ?</h2>
+            <p class="cta-action">C'est parti !</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/cv_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/book_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/linkedin_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                    src="../../assets/images/icons/github_footer_button.svg"
+                    alt="Social media icon"
+                    class="social-icon"
+                  />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                      src="../../assets/images/icons/bento_footer_button.svg"
+                      alt="Social media icon"
+                      class="social-icon"
+                  />
+              </a>
+            </div>
+            <p class="copyright">Site créé avec ❤ par Lola Navarro 2025</p>
+          </section>
+
+          <!-- Navigation Section -->
+          <nav class="nav-section">
+            <h2 class="nav-title">Navigation</h2>
+            <div class="nav-links">
+              <a href="../index.html" style="color: inherit; text-decoration: none"
+                >Accueil</a
+              ><br />
+              <a href="#" style="color: inherit; text-decoration: none"
+                >Projets</a
+              ><br />
+              <a href="./contact.html" style="color: inherit; text-decoration: none"
+                >Contact</a
+              >
+            </div>
+          </nav>
+      </div>
+    </div>
+</footer>
+</body>
+</html>

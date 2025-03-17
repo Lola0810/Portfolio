@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lola - Portfolio</title>
+
+    <link rel="stylesheet" href="../../style/project.css">
+    <link rel="stylesheet" href="../../style/common.css">
+    <link rel="icon" type="image/png" href="../../assets/images/icons/butterfly.svg">
+    <script>
+      const copyEmail = () => {
+          const emailText = document.getElementById("emailText").textContent;
+          navigator.clipboard.writeText(emailText).then(() => {
+          }).catch(err => {
+          console.error("Failed to copy email: ", err);
+          });
+      }
+      </script>
+</head>
+<body>
+  <section class="main-content">
+    <header>
+      <img src="../../assets/images/icons/butterfly.svg" alt>
+
+      <nav>
+          <ul>
+              <li><a href="../../index.html">Accueil</a></li>
+              <li><a href="../projects.html">Projets</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="container">
+        <div class="project-header">
+          <a href="../projects.html"><button>RETOUR</button></a>
+
+          <h1 class="project-title">Tv-Tregor, Refonte WebTV</h1>
+          <p class="subtitle">Projet Universitaire | Projet bachelor - 2025</p>
+        </div>
+    
+        <nav class="category-buttons">
+          <div class="category-button">UX/UI Design</div>
+          <div class="category-button">Design de service</div>
+        </nav>
+    
+        <div class="project-showcase">
+          <img src="../../assets/images/projects/tvtregor/banner.png" alt="Leurenner Réservation de spectacle Projet" class="project-image">
+        </div>
+
+        <section class="sub-container">
+          <section class="context-section">
+            <h2 class="context-heading">Contexte</h2>
+            <p class="context-text">
+              Dans le cadre d’un partenariat avec TV-Trégor, une association qui archive et diffuse du contenu VOD dans le Trégor, j’ai repensé avec mon équipe l’expérience utilisateur de leur site web. L’objectif était d’adapter le parcours utilisateur aux standards des web TV modernes, inspirés de plateformes comme Netflix, Arte ou Tébéo. <br/>
+              Mon rôle lors de ce projet était Lead UX/UI Designer, je coordonnais les équipes, attribuait des tâches et travaillait surtout sur la partie UI mais également sur l’étude des solutions (CMS, ...).
+                
+            </p>
+          </section>
+  
+          <section class="mission-section">
+            <div class="mission-container">
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Initialisation</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Audit UX</span> <br/>
+                      Formalisation des parcours utilisateur actuels, analyse du site et benchmark de concurrents</li>
+                    <li><span class="highlight">Mise en lumière des pain points</span><br/>
+                      Réflexion sur des solutions aux problèmes de parcours utilisateur (User Journey Map, blue print et fonctionnalités tierces)</li>
+                    <li><span class="highlight">Cartographie des alternatives</span> <br/>
+                    Analyse CMS, plugins et thèmes autour du concept de WebTV</li>
+          
+                  </ul>
+                </div>
+              </article>
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/tvtregor/illu1.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="mission-section">
+            <div class="mission-container">
+              <figure class="mission-image-wrapper">
+                <img
+                  src="../../assets/images/projects/tvtregor/illu2.png"
+                  alt="Mission project visual"
+                  class="mission-image"
+                />
+              </figure>
+
+              <article class="mission-content">
+                <div class="mission-text-container">
+                  <h2 class="context-heading">Idéation & conception</h2>
+                  <ul class="mission-list">
+                    <li><span class="highlight">Conception de l’architecture des pages et flow</span> <br/>
+                        Structure de l’information des différentes pages et fonctionnalités (Wireframe), architecture des pages (Flow) en fonction des blue prints</li>
+                    <li><span class="highlight">Questionnaire aux partenaires</span> <br/>
+                      Recueillir les préférences des partenaires en terme d’interface, de budget pour le site tout en laissant conseillant sur le choix de l’architecture des pages</li>
+                    <li><span class="highlight">Conception d'une maquette</span><br/>
+                      Maquette dynamique et entièrement prototypée (Kit UI, animations, ...)</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="competences-container">
+            <img src="../../assets//images/icons/butterflyIcon.svg" alt="Butterfly icon" class="butterfly-icon">
+            <h2 class="competences-title">Compétences mobilisées</h2>
+          
+            <div class="skills-container">
+              <span class="skill-pill">UX/UI Design</span>
+              <span class="skill-pill">Organisation</span>
+              <span class="skill-pill">Pédagogie</span>
+            </div>
+          
+            <div class="tools-container">
+              <img class="tool-icon" src="../../assets/images/icons/figma.png"/>
+              <img class="tool-icon" src="../../assets/images/icons/ps.svg"/>
+              <img class="tool-icon" src="../../assets/images/icons/form.svg"/>
+              <img class="tool-icon" src="../../assets/images/icons/notion.png"/>
+            </div>
+          
+            <p class="competences-description">
+              Ce projet a été une expérience très enrichissante, tant sur le plan professionnel que personnel. Travailler avec un client réel nous a permis de structurer nos échanges pour présenter régulièrement l’avancement du projet. <br/>
+J’ai également eu l’opportunité de diriger mon équipe dans un domaine qui me passionne, l’UX/UI Design, en organisant les différentes phases sur une période de six mois. <br/>
+Cette expérience m’a appris à rendre des notions techniques plus accessibles afin de les expliquer clairement à un partenaire non spécialisé.
+            </p>
+          </section>
+
+          <section class="note-container">
+            <div class="content-wrapper">
+              <div class="image-column">
+                <img
+                  src="../../assets/images/projects/tvtregor/illu3.png"
+                  alt="Feature image"
+                  class="feature-image"
+                />
+              </div>
+              <div class="text-column">
+                <div class="text-content">
+                  <span class="context-heading">Résultat</span>
+                  <p class="note-description">
+                    Notre proposition a reçu un retour très positif de la part de notre partenaire qui a souligné le caractère humain et intuitif de notre travail. Il a également mentionné que cela lui avait permis de mieux comprendre l’importance de l’expérience utilisateur.
+                    <br />
+                    <a href="../../assets/pdf/TVTregor-Audit.pdf">Lien de la phase d’audit UX</a>
+                    <br/>
+                    <a href="../../assets/pdf/TVTregor-Exploration.pdf">Lien de la phase d'exploration</a>
+                    <br />
+                    <a href="../../assets/pdf/TVTregor-Maquette.pdf">Maquette finale</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+    </main>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <p class="quick-response">Et en plus je réponds vite !</p>
+            <a id="emailText" class="email-container" onclick="copyEmail()">
+              <span class="email-text">contact@lolanavarro.fr</span>
+              <img
+                src="../../assets/images/icons/copy-white.svg"
+                alt="Email icon"
+                class="email-icon"
+              />
+            </a>
+            <div class="friendly-message">
+              <img
+                src="../../assets/images/icons/arrow.svg"
+                alt="Message icon"
+                class="message-icon"
+              />
+              <p class="message-text">Aller je ne mords peut-être pas ;)</p>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="cta-section">
+            <h2 class="cta-question">Je vous ai convaincu ?</h2>
+            <p class="cta-action">C'est parti !</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/cv_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/book_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                <img
+                  src="../../assets/images/icons/linkedin_footer_button.svg"
+                  alt="Social media icon"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                    src="../../assets/images/icons/github_footer_button.svg"
+                    alt="Social media icon"
+                    class="social-icon"
+                  />
+              </a>
+              <a href="#" aria-label="Social media link">
+                  <img
+                      src="../../assets/images/icons/bento_footer_button.svg"
+                      alt="Social media icon"
+                      class="social-icon"
+                  />
+              </a>
+            </div>
+            <p class="copyright">Site créé avec ❤ par Lola Navarro 2025</p>
+          </section>
+
+          <!-- Navigation Section -->
+          <nav class="nav-section">
+            <h2 class="nav-title">Navigation</h2>
+            <div class="nav-links">
+              <a href="../index.html" style="color: inherit; text-decoration: none"
+                >Accueil</a
+              ><br />
+              <a href="#" style="color: inherit; text-decoration: none"
+                >Projets</a
+              ><br />
+              <a href="./contact.html" style="color: inherit; text-decoration: none"
+                >Contact</a
+              >
+            </div>
+          </nav>
+      </div>
+    </div>
+</footer>
+</body>
+</html>
