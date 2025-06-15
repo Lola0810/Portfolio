@@ -19,11 +19,12 @@
         </script>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
     <section class="main-content">
+        <img class="header-blur" src="assets/images/backgrounds/header_blur.svg" alt>
         <header>
             <img src="assets/images/icons/butterfly.svg" alt>
-
+            <div class="placeholder"></div>
             <nav>
                 <ul>
                     <li><a href="#">Accueil</a></li>
@@ -31,28 +32,29 @@
                     <li><a href="views/contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="buttons-header">
+                <a href="assets/pdf/CV_Lola_NAVARRO.pdf"><button class="button-moncv">Mon CV</button></a>
+                <a href="views/contact.html"><button class="button-contacter">Me contacter</button></a>
+            </div>
         </header>
 
         <main>
             <div id="home">
-                <img id="butterfly_home" src="assets/images/backgrounds/home_butterfly.svg" alt>
                 <div id="description">
                     <h2>Bonjour je suis <span>Lola Navarro</span></h2>
                     <h1>Junior UX/UI Designer</h1>
-                    <p>Étudiante à l’IUT de Lannion en 3e année de BUT MMI (Métiers du Multimédia et de l’Internet),
-                        admise à l’Ecole de Design de Nantes Atlantique en Master Digital Design !</p>
-                    <div class="button-cv">
-                        <a href="assets/pdf/LolaNAVARROCV.pdf" target="_blank"><button id="button-cv">MON
-                                CV</button></a>
-                    </div>
+                    <p>Designeuse <span class="highlight">humaine</span>, <span class="highlight">empathique</span>, <span class="highlight">ambitieuse</span> et <span class="highlight">créative</span>. <br/>
+                        Diplômée d’un BUT Métiers du Multimédia et de l’Internet et future étudiante en cycle master Digital design à L’Ecole de Design Nantes Atlantique</p>
                 </div>
                 <div class="right-side">
-                    <div id="round">
+                    <img src="assets/images/backgrounds/all.svg" alt>
+                    <!-- <div id="round">
                         <img src="assets/images/backgrounds/round.svg" alt>
                         <img src="assets/images/backgrounds/round25.svg" alt>
                     </div>
-
-                    <div class="announcement-card">
+ -->
+                    <!-- <div class="announcement-card">
                         <div class="card-container">
                             <div class="card-header">
                                 <img src="./assets/images/icons/dingdong.png" class="profile-image"
@@ -68,7 +70,7 @@
                                 service
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -82,19 +84,17 @@
 
             <div id="about-me">
                 <div class="description-me hover">
-                    Bientôt titulaire d'un <span>Bac+3 Métiers du multimédia et de l'Internet</span>, j'ai l'ambition de
-                    me spécialiser dans le domaine du design et de l'<span>UX-UI Design.</span>
-                    Passionnée par l'anglais, je compte ensuite développer ma <span>carrière à l'internationale</span>.
-                    <br> <br>
-
-                    Poursuivant bientôt mes études dans un Master en Digital Design, je recherche à constamment enrichir
-                    mes compétences et devenir une <span>designeuse de talent</span>.
+                    Bientôt diplômée d’un <span class="highlight">Bac+3 en BUT MMI</span>, je m’oriente désormais vers un <span class="highlight">Master Digital Design</span> pour me spécialiser en <span class="highlight">UX/UI design</span>.
+                    <br><br>
+                    <span class="highlight">Humaine</span> et <span class="highlight">empathique</span>, j’aspire à devenir une véritable <span class="highlight">experte de la compréhension des besoins</span> utilisateurs afin de concevoir des parcours et <span class="highlight">interfaces qui ont du sens</span>. 
+                    <br><br>
+                    Mon projet à long terme : évoluer dans un <span class="highlight">cadre international</span> et <span class="highlight">coordonner</span> des projets de design à <span class="highlight">impact</span>.
                 </div>
                 <div class="linksRS">
-                    <a href="assets/pdf/LolaNAVARROCV.pdf" title="Mon CV" target="_blank"><img
+                    <a href="assets/pdf/CV_Lola_NAVARRO.pdf" title="Mon CV" target="_blank"><img
                             src="assets/images/icons/CV-icon.svg" alt="Accédez à mon CV ici"></a>
                     <a href="assets/pdf/LolaNAVARROBK.pdf" title="Mon Book" target="_blank"><img
-                            src="assets/images/icons/PDFBook-icon.svg" alt="Accédez à mon Book ici"></a>
+                            src="assets/images/icons/Book-icon.svg" alt="Accédez à mon Book ici"></a>
                     <a href="https://www.linkedin.com/in/lola-navarro/" title="Mon LinkedIn" target="_blank"><img
                             src="assets/images/icons/LinkedIn-icon.svg" alt="Accédez à mon LinkedIn ici"></a>
                     <a href="https://github.com/Lola0810" title="Mon GitHub" target="_blank"><img
@@ -207,109 +207,98 @@
                 <p>Desc</p>
             </div>
         </div> -->
-            <div class="headline-skills">
-                <h2 class="title-skills">Expériences</h2>
-                <p>Et bien plus dans les années à venir.. <br />
-                    Pourquoi pas la prochaine avec vous ?</p>
-            </div>  
+            
 
-            <div id="skills">
+                <div class="headline-skills">
+    
+                </div>  
+            <div id="skills">        
                 <!-- Bloc Com -->
-                <section class="experience-card hover">
-                    <article class="experience-card-container">
-                        <div class="experience-content">
-                            <div class="experience-main-content">
-                                <div class="date-container">
-                                    <img src="./assets/images/logo/ResAgri.png" class="date-logo" />
-                                    <p class="date-period">
-                                        Mars
-                                        <br />
-                                        -
-                                        <br />
-                                        Juin 2025
-                                    </p>
-                                </div>
-                                <div class="job-details">
-                                    <h2 class="job-title">Stage | Community Manager</h2>
-                                    <h3 class="organization-name">
-                                        Chambre d'agriculture de Région Bretagne - Rés'Agri 56 et 29
-                                    </h3>
-                                    <ul class="job-responsibilities">
-                                        <li>Concevoir et mettre en place une stratégie de diffusion sur les réseaux</li>
-                                        <li>Moderniser le site web de Rés'Agri 56</li>
-                                        <li>Développer les interactions et la visibilité sur les réseaux</li>
-                                        <li>Sensibiliser et former les employés à la communication</li>
-                                        <li>Analyser et planifier les publications</li>
-                                        <li>Impliquer les administrateurs des associations Rés'Agri 56 et 29 dans les
-                                            changements</li>
-                                        <li>Analyser les performances et ajuster les stratégies</li>
-                                    </ul>
+                <div class="left">
+                    <section class="experience-card hover">
+                        <article class="experience-card-container">
+                            <div class="experience-content">
+                                <div class="experience-main-content">
+                                    <div class="job-details">
+                                        <div class="title-exp">
+                                            <h2 class="job-title">Stage BUT3 - Community Manager</h2>
+                                            <span class="job-date">15 semaines</span>
+                                        </div>
+                                        <h3 class="organization-name">
+                                            Chambre d'agriculture de Région Bretagne - Rés'Agri 56 et 29
+                                        </h3>
+                                        <ul class="job-responsibilities">
+                                            <li>Concevoir et mettre en place une stratégie de diffusion sur les réseaux</li>
+                                            <li>Moderniser le site web de Rés'Agri 56</li>
+                                            <li>Développer les interactions et la visibilité sur les réseaux</li>
+                                            <li>Sensibiliser et former les employés à la communication</li>
+                                            <li>Analyser et planifier les publications</li>
+                                            <li>Impliquer les administrateurs des associations Rés'Agri 56 et 29 dans les
+                                                changements</li>
+                                            <li>Analyser les performances et ajuster les stratégies</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="logo-column">
-                                <img src="assets/images/icons/TEAMS.png" class="organization-logo" />
-                                <img src="assets/images/icons/affinity.png" class="organization-logo" />
-                                <img src="assets/images/icons/figma.png" class="organization-logo" />
-                                <img src="assets/images/icons/wordpress.svg" class="organization-logo" />
-                                <img src="assets/images/icons/drive.png" class="organization-logo" />
-                                <img src="assets/images/icons/canva.svg" class="organization-logo" />
+                        </article>
+                    </section>
+    
+                    <!-- Bloc Webdesign -->
+                    <section class="experience-card hover">
+                        <article class="experience-card-container">
+                            <div class="experience-content">
+                                <div class="experience-main-content">
+                                    <div class="job-details">
+                                        <div class="title-exp">
+                                            <h2 class="job-title">Stage BUT2 - Designer d’interface</h2>
+                                            <span class="job-date">11 semaines</span>
+                                        </div>
+                                        
+                                        <h3 class="organization-name">
+                                            Service de communication - IUT de Lannion
+                                        </h3>
+                                        <ul class="job-responsibilities">
+                                            <li>Analyse de l’existant et recueil des besoins  (interview utilisateur)</li>
+                                            <li>Architecture des données, arborescence et navigation (wireframe)</li>
+                                            <li>Mise en forme et adaptation du thème Wordpress Alliance</li>
+                                            <li>Intégration des données existantes et rédaction de documentation pour les outils</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                </section>
+                        </article>
+                    </section>
+                </div>
+                <img class="two-blur" src="assets/images/backgrounds/2_blur.svg" alt>
+                <div class="right-skills">
+                    <h2 class="title-skills">Expériences</h2>
+                    <p>Et bien plus dans les années à venir..</p>
 
-                <!-- Bloc Webdesign -->
-                <section class="experience-card hover">
-                    <article class="experience-card-container">
-                        <div class="experience-content">
-                            <div class="experience-main-content">
-                                <div class="date-container">
-                                    <img src="./assets/images/logo/IUTLannion.png" class="date-logo" />
-                                    <p class="date-period">
-                                        Avril
-                                        <br />
-                                        -
-                                        <br />
-                                        Juin 2024
-                                    </p>
-                                </div>
-                                <div class="job-details">
-                                    <h2 class="job-title">Stage | Designer d’interface Wordpress</h2>
-                                    <h3 class="organization-name">
-                                        Service de communication - IUT de Lannion
-                                    </h3>
-                                    <ul class="job-responsibilities">
-                                        <li>Analyse de l’existant et recueil des besoins  (interview utilisateur)</li>
-                                        <li>Architecture des données, arborescence et navigation (wireframe)</li>
-                                        <li>Mise en forme et adaptation du thème Wordpress Alliance</li>
-                                        <li>Intégration des données existantes et rédaction de documentation pour les outils</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="logo-column">
-                                <img src="assets/images/icons/HTML.png" class="organization-logo" />
-                                <img src="assets/images/icons/CSS.png" class="organization-logo" />
-                                <img src="assets/images/icons/TEAMS.png" class="organization-logo" />
-                                <img src="assets/images/icons/drive.png" class="organization-logo" />
-                                <img src="assets/images/icons/wordpress.svg" class="organization-logo" />
-                                <img src="assets/images/icons/figma.png" class="organization-logo" />
-                            </div>
-                        </div>
-                    </article>
-                </section>
-            </div>
+                    <p class="skill-text">Lors de mes études universitaires, j’ai effectué deux stages, d’une durée totale de 26 semaines afin d’explorer les domaines qui m’intéressent et me passionnent. <br>
+                        Ces 26 semaines m’ont permis de me professionnaliser, d’expérimenter, et de travailler sur le terrain aux côtés de professionnels issus de secteurs variés. 
+                        <br><br>
+                        
+                        J’ai fait preuve d’adaptabilité et de sérieux, en menant mes missions en totale autonomie. J’ai su prendre des initiatives, réaliser une veille active et m’auto-former sur des technologies que je ne maîtrisais pas encore.
+                        <br><br>
+                        Ces stages m’ont également permis de développer mes compétences en communication, en collaborant avec des équipes pluridisciplinaires et en partageant régulièrement l’avancée de mon travail.
+                    </p>
+                    <img src="./assets/images/icons/skill-icon.png" alt>
+                  </div>
+                </div>
+           
 
             <div class="headline-skills">
                 <h2 class="title-skills">Compétences</h2>
                 <p>Tout au long de mes études j’ai appris à être polyvalente.<br />
                     Mais surtout.. à être créative et à innover !</p>
+                
             </div>
+            <img class="one-blur" src="assets/images/backgrounds/1_blur.svg" alt>
 
             <div id="abilities-component">
                 <div class="abilities-container">
                   <div class="abilities-list">
                     <!-- abilitie Item 1 -->
-                     <!-- /!\ QUAND TU AJOUTER DES abilitie INCREMENTE LES DATA-ID DU abilitie-ITEM ET DU abilitie-IMAGE-->
                     <div class="abilitie-item hover selected" data-id="1">
                       <div class="abilitie-header">
                         <h3 class="abilitie-title">Expérience Utilisateur <span class="highlight">(UX)</span> design <br/> d'<span class="highlight">interface</span> et design de <span class="highlight">service</span></h3>
@@ -481,7 +470,7 @@
                             <a class="button-img" onclick="redirectToProjectWithTag('web_dev')">Développement web</a>
                         </div>
                       </div>
-                      <div class="abilitie-image" data-id="3"> <!-- UPDATE L'ID DE L'ATTRIBUT QUAND T'AJOUTE DES IMAGES -->
+                      <div class="abilitie-image" data-id="3"> 
                         <img src="./assets/images/projects/briquehouse/illu-visu.png" alt="abilitie visualization"/>
                         <div class="overlay">
                             <div class="announcement-title title-container">
@@ -516,16 +505,18 @@
                   </div>
                 </div>
             </div>
-        </main>
+        </main> 
     </section>
 
     <div class="calltoproject">
         <span>Intéressé.e.s ? Consultez mes projets</span>
 
-        <a href="views/projects.html"><button>MES RÉALISATIONS</button></a>
+        <a href="views/projects.html"><button>Mes réalisations</button></a>
     </div>
-
+    
     <footer class="footer">
+        <img class="footer-blur" src="assets/images/backgrounds/footer_blur.png" alt>
+        
         <div class="footer-container">
             <div class="footer-content">
                 <!-- Contact Section -->
@@ -537,7 +528,7 @@
                     </a>
                     <div class="friendly-message">
                         <img src="assets/images/icons/arrow.svg" alt="Message icon" class="message-icon" />
-                        <p class="message-text">Aller je ne mords peut-être pas ;)</p>
+                        <p class="message-text">Aller je ne mords pas ;)</p>
                     </div>
                 </section>
 
@@ -546,7 +537,7 @@
                     <h2 class="cta-question">Je vous ai convaincu ?</h2>
                     <p class="cta-action">C'est parti !</p>
                     <div class="social-icons">
-                        <a href="assets/pdf/LolaNAVARROCV.pdf" aria-label="Social media link">
+                        <a href="assets/pdf/CV_Lola_NAVARRO.pdf" aria-label="Social media link">
                             <img src="assets/images/icons/cv_footer_button.svg" alt="Social media icon"
                                 class="social-icon" />
                         </a>
@@ -574,9 +565,9 @@
                 <nav class="nav-section">
                     <h2 class="nav-title">Navigation</h2>
                     <div class="nav-links">
-                        <a href="../index.html" style="color: inherit; text-decoration: none">Accueil</a><br />
-                        <a href="#" style="color: inherit; text-decoration: none">Projets</a><br />
-                        <a href="./contact.html" style="color: inherit; text-decoration: none">Contact</a>
+                        <a href="#" style="color: inherit; text-decoration: none">Accueil</a><br />
+                        <a href="views/projects.html" style="color: inherit; text-decoration: none">Projets</a><br />
+                        <a href="views/contact.html" style="color: inherit; text-decoration: none">Contact</a>
                     </div>
                 </nav>
             </div>

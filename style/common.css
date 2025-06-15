@@ -82,10 +82,10 @@
   /* Stylisation des différentes balises qui ne changera pratiquement pas */
   
   h1 {
-    font-size: 4.5rem;
+    font-size: 100px;
     font-family: Satoshi_Black;
     max-width: 99%;
-    line-height: 5rem;
+    line-height: 100px;
     color: var(--main);
   }
   
@@ -113,26 +113,66 @@
   
   p {
     font-family: Satoshi_Regular;
-    color: var(--text-color);
+    color: var(--grey);
     font-size: 0.9rem;
   }
   
   button {
-    background-color: var(--main);
+    background-color: var(--white);
     padding: 12px 18px;
     font-family: 'Satoshi_Black';
-    color: white;
+    color: var(--grey);
     border: none;
-    border-radius: 40px;
-    font-size: 1rem;
+    border-radius: 10px;
+    font-size: 20px;;
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.2s ease;
-  }
+    box-shadow: 0px 3px 0px #D3C8CB;
+}
+
+.button-moncv {
+  background-color: var(--white);
+  padding: 10px 18px;
+  font-family: 'Satoshi_Black';
+  color: var(--grey);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0px 3px 0px #D3C8CB;
+}
+
+.button-contacter {
+  background-color: var(--main);
+  box-shadow: 0px 3px 0px rgb(239 32 111);
+  padding: 10px 12px;
+  font-family: 'Satoshi_Black';
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button-contacter:hover {
+    transform: scale(1.02);
+    background-color: #f84f92;
+    box-shadow: 0 3px 0 var(--main-dark);
+}
+
+.button-cv {
+  transform: scale(1.02);
+    background-color: #f7edf0;
+    box-shadow: 0 3px 0 #ACA7A8;
+}
   
   button:hover {
-    transform: scale(1.02); /* Agrandit légèrement sans impacter le layout */
-    background-color: var(--main-dark);
-  }
+    transform: scale(1.02);
+    background-color: #f7edf0;
+    box-shadow: 0 3px 0 #ACA7A8;
+}
   a {
     color: var(--main);
     font-family: Satoshi_Medium;
@@ -145,14 +185,21 @@
     --secondary: #00DA7E;
     --white: #FDFAF8;
     --main-form: #FEB0CD;
-    --text-color: #0D1F30;
+    --text-color: #212121;
+    --grey: #494949;
   }
   
   header {
     height: 6.8em;
+    justify-content: space-between;
+    margin-right: 3vw;
     display: flex;
-    justify-content: center;
     align-items: center;
+  }
+
+  .placeholder {
+    width: 20%;
+    height: 20px;
   }
   
   header>img {
@@ -203,6 +250,11 @@
     background-color: var(--main);
   }
   
+.buttons-header {
+  display: flex;
+  gap: 1vw;
+}
+
   #button-cv {
     padding-right: 5vh;
     padding-left: 5vh;
@@ -290,8 +342,8 @@
   .title h2 {
     font-size: 3.5rem;
     color: var(--main);
-    font-family: Satoshi_Bold;
-    margin-bottom: 2vh;
+    font-family: Satoshi_Black;
+    margin-bottom: 1vh;
   }
   
   .footer-container-ft {
@@ -349,7 +401,7 @@
     width: fit-content;
     position: relative;
     overflow: hidden;
-    background-color: transparent;
+    background-color: var(--white);
     transition: color 0.4s ease-out, background-color 0.4s ease-out;
   }
   
@@ -398,7 +450,7 @@
   }
   
   .button-icon>img {
-    width: 1.5rem;
+    width: 2rem;
   }
   
   .links>a img {
@@ -415,10 +467,10 @@
   
   .footer {
     border-radius: 0;
+    position: relative;
   }
   
   .footer-container {
-    background-color: rgba(255, 102, 162, 1);
     display: flex;
     padding: 41px 70px 22px;
     flex-direction: column;
@@ -426,8 +478,9 @@
   }
   
   .footer-content p, h2 {
-    color: white;
-  }
+    color: var(--text-color);
+    font-family: 'Satoshi_Medium';
+}
 
   .footer-content {
     display: flex;
@@ -455,27 +508,66 @@
           sans-serif;
     color: rgba(243, 240, 241, 1);
   }
+
+  .one-blur {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+
+  }
+
+  .one-blur-contact {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: 97%;
+}
+
+  .two-blur {
+    position: absolute;
+    right: 0;
+    width: 100vh;
+    z-index: -1;
+  }
+
+  .header-blur {
+    position: absolute;
+    width: 100vh;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
   
   .email-container {
     border-radius: 40px;
-    border: 3px solid rgba(255, 255, 255, 1);
+    border: 3px solid var(--main);
     align-self: stretch;
-    display: flex;
+    display: flex
+;
     margin-top: 6px;
     padding: 9px 21px;
     cursor: pointer;
-    color: white;
+    color: var(--main);
     align-items: stretch;
     gap: 11px;
     font-size: 25px;
     font-weight: 900;
     white-space: nowrap;
-  }
+}
   
   .email-text {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
+  }
+
+  .footer-blur {
+    position: absolute;
+    top: 18vh;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vh;
   }
   
   .email-icon {
@@ -498,11 +590,16 @@
     align-items: stretch;
   }
 
-  .cta-question {
-    color: white;
-    font-size: 1rem;
-    font-family: 'Satoshi_Regular';
+  .social-icons>a {
+    text-decoration-style: none;
+    color: var(--white);
   }
+
+  .cta-question {
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: 'Satoshi_Regular';
+}
 
   .cta-action {
     font-size: 1.5rem;
@@ -510,6 +607,12 @@
     margin-bottom: 13px;
     margin-top: 10px;
   }
+
+  p.cta-action {
+    color: var(--main);
+    font-family: 'Satoshi_Black';
+    font-size: 31px;
+}
   
   .copyright {
     color: rgba(243, 240, 241, 1);
@@ -554,14 +657,21 @@
     font-weight: 500;
     align-self: flex-start;
     margin-top: 6px;
+    color: var(--text-color);
   }
   
   .nav-title {
-    color: white !important;
+    color: var(--main) !important;
   }
   
   /* Responsive styles */
   
+@media (max-width:1360px) {
+  .footer-blur {
+    display: none;
+  }
+}
+
   @media (max-width: 1100px) {
     .footer-container {
       max-width: 100%;
@@ -607,7 +717,7 @@
   .projets>h2,.designs>h2 {
     font-size: 2.563rem;
     color: var(--main);
-    font-family: Satoshi_Bold;
+    font-family: Satoshi_Black;
     text-align: center;
     margin-top: 7vh;
     margin-bottom: 4vh;

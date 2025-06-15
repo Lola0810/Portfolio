@@ -8,35 +8,37 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 4em;
+  margin-top: 6em;
 }
 
 #description {
-  width: 80vh;
+  width: 95vh;
 }
 
 #description>h2 {
   color: var(--text-color);
   font-family: Satoshi_Medium !important;
-  font-size: 2rem !important;
+  font-size: 38px !important;
   font-weight: normal;
   padding-bottom: 1vh;
 }
 
 #description>h2>span {
   font-family: Satoshi_Black;
+  font-size: 46px;
   color: white;
   background-color: var(--main);
   margin-left: 2px;
-  padding: 3px 15px;
-  border-radius: 21px;
+  padding: 0px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 0px rgb(239 32 111);
 }
 
 #description>p {
-  font-family: 'Satoshi_Medium';
-  color: var(--text-color);
+  font-family: 'Satoshi_Bold';
+  color: var(--grey);
   margin: 2vh auto;
-  font-size: 1.4rem;
+  font-size: 24px;
 }
 
 #description>p>b {
@@ -44,22 +46,10 @@
   font-size: 18px;
 }
 
-#home span,#home h1,#home h2,#home h3,#home p {
-  display: inline-block;
-  opacity: 0;
-  animation: fade-in 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+.right-side>img {
+  margin-left: 4vh;
 }
 
-#skills span,#skills h1,#skills h2,#skills h3,#skills p {
-  display: inline-block;
-  opacity: 0;
-  animation: fade-in 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-#skills img,#skills li {
-  opacity: 0;
-  animation: fade-in 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
 
 #round {
   position: relative;
@@ -83,7 +73,7 @@
 
 img#scroll {
   display: block;
-  margin: 5em auto;
+  margin: 9em auto;
   animation: bounce_vertically 2s infinite;
 }
 
@@ -114,17 +104,17 @@ img#scroll {
   margin-top: 5vw;
 }
 
-.headline-about-me>p,.headline-skills>p {
-  font-family: Satoshi_Medium;
+.headline-about-me>p,.headline-skills>p,.right-skills>p{
+  font-family: Satoshi_Bold;
   font-size: 1.2rem;
   margin-bottom: 2vh;
 }
 
-.title-about-me,.title-skills {
-  font-family: Satoshi_Bold;
+.title-about-me, .title-skills {
+  font-family: 'Satoshi_Black';
   color: var(--main);
-  font-size: 3em;
-  margin-bottom: 2vh;
+  font-size: 60px;
+  margin-bottom: 1vh;
 }
 
 #about-me>div {
@@ -135,10 +125,17 @@ img#scroll {
   font-family: 'Satoshi_Regular';
   color: var(--text-color);
   font-size: 1.3rem;
-  background-color: #FFF;
-  border-radius: 22px;
+  background-color: #FFFAF7;
+  border-radius: 10px;
+  border: solid 1px #BEBEBE;
   padding: 1.5%;
-  width: 37vh;
+  width: 39vh;
+}
+
+.skill-text {
+  font-family: 'Satoshi_Regular' !important;
+  font-size: 1.3rem !important;
+  width: 58vh;
 }
 
 .description-me>span {
@@ -164,7 +161,7 @@ img#scroll {
 
 .group-components {
   height: 100%;
-  gap: 48px;
+  gap: 36px;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -173,7 +170,9 @@ img#scroll {
 
 .general-infos {
   background-color: #FFF;
-  border-radius: 22px;
+  background-color: #FFFAF7;
+  border-radius: 10px;
+  border: solid 1px #BEBEBE;
   padding: 7%;
 }
 
@@ -181,49 +180,59 @@ img#scroll {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 4%;
 }
 
 .general-infos>div>h4 {
-  font-size: 1.5rem;
+  font-size: 31px;
+  font-family: 'Satoshi_Bold';
   text-transform: none;
 }
 
 .general-infos>div:nth-child(1)>p {
-  font-size: 1.3rem;
-  margin-left: 1rem;
+  font-size: 24px;
+  margin-left: 8px;
 }
 
+.general-infos>div:nth-child(2)>h4 {
+  margin-bottom: 1vh;
+}
 .general-infos>div:nth-child(2)>img {
   width: 75%;
 }
 
 .quote {
-  background-color: #FFF;
-  border-radius: 22px;
+  background-color: #FFFAF7;
+  border-radius: 10px;
+  border: solid 1px #BEBEBE;
   padding: 7%;
+}
+
+.quote>h3 {
+  margin-bottom: 1vh;
 }
 
 .quote>a {
   font-family: 'Satoshi_Bold';
-  color: var(--secondary);
+  color: var(--main);
+  margin-top: 2vh;
   text-decoration: underline;
   font-size: 1.3rem;
 }
 
 .quote>p {
-  font-family: 'Satoshi_Regular';
-  color: var(--text-color);
+  font-family: 'Satoshi_Medium';
+  color: var(--grey);
   font-size: 1.3rem;
-  padding-top: 4%;
+  padding-top: 2%;
 }
 
 .carousel {
   font-family: 'Satoshi_Regular';
   color: var(--text-color);
   font-size: 1.3rem;
-  background-color: #FFF;
-  border-radius: 22px;
+  background-color: #FFFAF7;
+  border-radius: 10px;
+  border: solid 1px #BEBEBE;
   padding: 0.5%;
   width: 15%;
 }
@@ -273,11 +282,12 @@ img#scroll {
 }
 
 #skills {
-  margin-left: 17vw;
-  margin-right: 17vw;
+  margin-left: 15vw;
+  margin-right: 12vw;
   margin-bottom: 5em;
+  flex-wrap: wrap-reverse;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #abilities-component {
@@ -309,8 +319,8 @@ div#skills>div {
 }
 
 .calltoproject>span {
-  font-family: Satoshi_Medium;
-  color: var(--main);
+  font-family: 'Satoshi_Medium';
+  color: var(--grey);
   font-size: 1.1rem;
   margin-bottom: 2vh;
 }
@@ -377,8 +387,6 @@ div#skills>div {
 /* ------- RESPONSIVE RULES ------- */
 
 @media screen and (max-width: 764px) {
-  /* Beurk */
-
   #about-me {
     max-width: 100% !important;
     margin-left: 2% !important;
@@ -387,7 +395,7 @@ div#skills>div {
   }
 
   .experience-card-container {
-    padding: 5px 20px 40px 20px;
+    padding: 5px 20px 30px 30px;
   }
 
   #skills, #abilities-component {
@@ -408,7 +416,6 @@ div#skills>div {
 }
 
 .title-card {
-  color: white;
   font-family: Satoshi_Bold;
   font-size: 1.2vw;
 }
@@ -418,14 +425,14 @@ div#skills>div {
 }
 
 .button-img {
-    border: 3px solid var(--main);
-    color: var(--main);
-    font-size: 18px;
-    border-radius: 20px;
-    background-color: white;
-    cursor: pointer;
-    padding: 6px 18px;
-    margin: 20px 0px;
+  border: 2px solid var(--main);
+  color: var(--main);
+  font-size: 18px;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+  padding: 4px 18px;
+  margin: 20px 0px;
 }
 
 @media screen and (max-width: 1426px) {
@@ -586,7 +593,7 @@ div#skills>div {
 
 .announcement-title {
   border-radius: 12px;
-  background-color: rgba(255, 102, 162, 1);
+  background-color: white;
   margin-top: auto;
   margin-bottom: auto;
   padding: 1px 18px;
@@ -594,9 +601,9 @@ div#skills>div {
   flex-shrink: 0;
   flex-basis: 0;
   width: fit-content;
+  margin-top: 1vh;
   font-size: 16px;
 }
-
 .announcement-description {
   line-height: 30px;
   align-self: stretch;
@@ -626,21 +633,21 @@ div#skills>div {
 }
 
 .experience-card {
-  border-radius: 0px 0px 0px 0px;
-  width: 100%;
+  background-color: #FFFAF7;
+  border-radius: 10px;
+  border: solid 1px #BEBEBE;
+  width: 86%;
   margin-top: 3vh;
 }
 
 .experience-card-container {
-  border-radius: 24px;
-  background-color: rgba(255, 255, 255, 1);
-  padding: 40px 40px 40px 31px;
+  padding: 30px 30px 30px 30px;
 }
 
 @media (max-width: 991px) {
   .experience-card-container {
     max-width: 100%;
-    padding: 40px 20px 40px 20px;
+    padding: 30px 20px 30px 30px;
   }
 
   .footer-content {
@@ -733,6 +740,23 @@ div#skills>div {
   width: fit-content;
 }
 
+span.job-date {
+  font-family: 'Satoshi_Bold';
+  font-size: 20px;
+  color: var(--main);
+  padding: 1px 12px;
+  border: solid 2px var(--main);
+  background-color: white;
+  border-radius: 20px;
+}
+
+.title-exp {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    gap: 27px;
+}
+
 @media (max-width: 991px) {
   .job-details {
     max-width: 100%;
@@ -740,15 +764,11 @@ div#skills>div {
 }
 
 .job-title {
-  border-radius: 13px;
-  background-color: var(--main);
-  padding: 4px 14px;
   font-size: 31px;
-  color: rgba(253, 250, 248, 1);
-  font-weight: 900;
-  line-height: 1;
-  margin: 0;
+  color: #212121;
 }
+
+
 
 @media (max-width: 991px) {
   .job-title {
@@ -762,7 +782,8 @@ div#skills>div {
   line-height: 1;
   margin-top: 9px;
   margin-bottom: 0;
-  color: var(--text-color);
+  color: var(--grey);
+  font-family: 'Satoshi_Medium';
 }
 
 @media (max-width: 991px) {
@@ -773,15 +794,13 @@ div#skills>div {
 
 .job-responsibilities {
   font-size: 20px;
-  font-family: Segoe UI,
-        -apple-system,
-        Roboto,
-        Helvetica,
-        sans-serif;
+  font-family: 'Satoshi_Regular';
   font-weight: 400;
+  color: var(--grey);
   align-self: stretch;
   margin-top: 11px;
   margin-bottom: 0;
+  margin-left: 27px;
 }
 
 @media (max-width: 991px) {
@@ -812,7 +831,7 @@ div#skills>div {
   width: 100%;
   align-items: stretch;
   gap: 32px;
-  font-family: Satoshi,
+  font-family: 'Satoshi_Regular',
         -apple-system,
         Roboto,
         Helvetica,
@@ -972,7 +991,7 @@ div#skills>div {
 }
 
 .abilitie-description {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Satoshi_Regular', sans-serif;
   line-height: 1.57;
   margin-top: 16px;
 }
@@ -996,7 +1015,7 @@ div#skills>div {
 }
 
 .abilitie-features li {
-  color: var(--text-color);
+  color: var(--grey);
   font-size: 16px;
   line-height: 1.67;
   margin: 5px 0;
@@ -1020,7 +1039,7 @@ div#skills>div {
 
 .gallery-container {
   aspect-ratio: 444 / 523;
-  border-radius: 1.25rem;
+  border-radius: 10px;
   overflow: hidden;
   position: sticky;
   right: 0;
@@ -1038,19 +1057,24 @@ div#skills>div {
   transition: opacity 0.3s;
 }
 
+
 .abilitie-image.active {
   opacity: 1;
 }
 
 .abilitie-image img {
-  height: 100%;
-  width: 100%;
+  height: 99%;
+  width: 99%;
   object-fit: cover;
+  border: solid 1px var(--main);
+  border-radius: 10px;
 }
 
 /* Active State */
 .abilitie-item.selected {
-  background-color: white;
+  background-color: #FFFAF7;
+  border-radius: 10px;
+  border: solid 1px #BEBEBE;
 }
 
 .abilitie-item.selected .icon-line:first-child {

@@ -6,11 +6,12 @@
   margin-top: 4vh;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .calltoproject>span {
-  font-family: Satoshi_Medium;
-  color: var(--main);
+  font-family: 'Satoshi_Medium';
+  color: var(--grey);
   font-size: 1.1rem;
   margin-bottom: 2vh;
 }
@@ -55,7 +56,7 @@
   justify-content: center;
   margin: auto;
   gap: 0.5em;
-  width: 721px;
+  width: 740px;;
   margin-bottom: 3%;
 }
 
@@ -116,7 +117,7 @@
 .title h2 {
   font-size: 3.5rem;
   color: var(--main);
-  font-family: Satoshi_Bold;
+  font-family: 'Satoshi_Black';
   margin-bottom: 2vh;
 }
 
