@@ -355,6 +355,7 @@
   font-family: Satoshi_Bold;
   font-size: 16px;
   font-weight: 700;
+  background-color: var(--white);
 }
 
 /* Responsive styles */
